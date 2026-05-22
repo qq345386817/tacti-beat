@@ -1,35 +1,483 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://tactibeat.luopeike.com/en-US/index.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/en-US/help.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/en-US/support.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/en-US/privacy-policy.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/zh-Hans/index.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/zh-Hans/help.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/zh-Hans/support.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/zh-Hans/privacy-policy.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/zh-Hant/index.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/zh-Hant/help.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/zh-Hant/support.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/zh-Hant/privacy-policy.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/ja/index.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/ja/help.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/ja/support.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/ja/privacy-policy.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/ko/index.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/ko/help.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/ko/support.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/ko/privacy-policy.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/de-DE/index.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/de-DE/help.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/de-DE/support.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/de-DE/privacy-policy.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/fr-FR/index.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/fr-FR/help.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/fr-FR/support.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/fr-FR/privacy-policy.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/es-ES/index.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/es-ES/help.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/es-ES/support.html</loc></url>
-  <url><loc>https://tactibeat.luopeike.com/es-ES/privacy-policy.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://tactibeat.luopeike.com/en-US/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/index.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/index.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/index.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/index.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/index.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/index.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/index.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/zh-Hans/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/index.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/index.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/index.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/index.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/index.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/index.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/index.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/zh-Hant/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/index.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/index.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/index.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/index.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/index.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/index.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/index.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/ja/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/index.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/index.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/index.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/index.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/index.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/index.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/index.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/ko/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/index.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/index.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/index.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/index.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/index.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/index.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/index.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/de-DE/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/index.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/index.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/index.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/index.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/index.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/index.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/index.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/fr-FR/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/index.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/index.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/index.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/index.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/index.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/index.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/index.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/es-ES/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/index.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/index.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/index.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/index.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/index.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/index.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/index.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/index.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/en-US/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/help.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/help.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/help.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/help.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/help.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/help.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/help.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/zh-Hans/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/help.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/help.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/help.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/help.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/help.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/help.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/help.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/zh-Hant/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/help.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/help.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/help.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/help.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/help.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/help.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/help.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/ja/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/help.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/help.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/help.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/help.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/help.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/help.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/help.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/ko/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/help.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/help.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/help.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/help.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/help.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/help.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/help.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/de-DE/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/help.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/help.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/help.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/help.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/help.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/help.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/help.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/fr-FR/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/help.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/help.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/help.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/help.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/help.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/help.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/help.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/es-ES/help.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/help.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/help.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/help.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/help.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/help.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/help.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/help.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/help.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/en-US/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/support.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/support.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/support.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/support.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/support.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/zh-Hans/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/support.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/support.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/support.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/support.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/support.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/zh-Hant/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/support.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/support.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/support.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/support.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/support.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/ja/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/support.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/support.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/support.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/support.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/support.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/ko/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/support.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/support.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/support.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/support.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/support.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/de-DE/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/support.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/support.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/support.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/support.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/support.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/fr-FR/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/support.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/support.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/support.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/support.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/support.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/es-ES/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/support.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/support.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/support.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/support.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/support.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/support.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/support.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/en-US/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/privacy-policy.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/zh-Hans/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/privacy-policy.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/zh-Hant/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/privacy-policy.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/ja/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/privacy-policy.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/ko/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/privacy-policy.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/de-DE/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/privacy-policy.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/fr-FR/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/privacy-policy.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://tactibeat.luopeike.com/es-ES/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tactibeat.luopeike.com/en-US/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tactibeat.luopeike.com/zh-Hans/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://tactibeat.luopeike.com/zh-Hant/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tactibeat.luopeike.com/ja/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://tactibeat.luopeike.com/ko/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://tactibeat.luopeike.com/de-DE/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tactibeat.luopeike.com/fr-FR/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tactibeat.luopeike.com/es-ES/privacy-policy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tactibeat.luopeike.com/en-US/privacy-policy.html" />
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
 </urlset>

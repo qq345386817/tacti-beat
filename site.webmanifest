@@ -1,7 +1,7 @@
 {
   "name": "TactiBeat",
   "short_name": "TactiBeat",
-  "description": "Rhythm-first tactile music for iPhone, iPad, and Mac.",
+  "description": "Rhythm-first tactile audio for iPhone.",
   "start_url": "/en-US/index.html",
   "display": "standalone",
   "background_color": "#070A2D",

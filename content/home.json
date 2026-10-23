@@ -1,0 +1,266 @@
+{
+  "en-US": {
+    "tagline": "Feel the beat. Not just the sound.",
+    "lead": "Turn beats and bass into iPhone vibrations. Bring your audio or video, listen to nearby sound, or play a compatible stream.",
+    "explore": "Explore the three modes",
+    "modeHeading": "Your sound. Three ways to feel it.",
+    "modes": [
+      [
+        "Audio & video files",
+        "Import a file or try a built-in demo. Analyze once, save the result, and replay the rhythm with synchronized haptics."
+      ],
+      [
+        "Live Sound",
+        "Let the microphone pick up nearby music and sound, and follow its energy through real-time tactile pulses."
+      ],
+      [
+        "Streams",
+        "Play a compatible direct audio or video URL and feel its rhythm as it plays. HLS supports playback only."
+      ]
+    ],
+    "screenNote": "App screens shown in Simplified Chinese. Live and stream activity uses demo data.",
+    "waveAlt": "Waveform detail from a real TactiBeat file analysis",
+    "waveLabel": "From sound to waveform to touch",
+    "tuneHeading": "More bass. Sharper beats. Your choice.",
+    "tuneBody": "Choose Deep Bass, Beat Focus, or another preset. Adjust intensity, sensitivity, and density to find a rhythm that feels right. Saved results keep their own settings.",
+    "tuneLink": "Find your settings",
+    "tuneAlt": "TactiBeat haptic style, mapping presets, intensity, sensitivity, and density settings",
+    "compatHeading": "A little context before you press play.",
+    "compatDevice": "Haptics require a compatible iPhone. Start with a built-in demo and Test Haptic to check how it feels on your device.",
+    "resourcesHeading": "Go a little deeper",
+    "endHeading": "Give your next beat another dimension.",
+    "skip": "Skip to content",
+    "imageLabel": "Open App screenshot"
+  },
+  "zh-Hans": {
+    "tagline": "不只听见节拍，也能触到节奏。",
+    "lead": "把节拍与低音变成 iPhone 震动。导入音频或视频，感受周围的声音，或播放兼容的流媒体。",
+    "explore": "了解三种模式",
+    "modeHeading": "你的声音，三种感受方式。",
+    "modes": [
+      [
+        "音频与视频文件",
+        "导入文件，或试试内置演示。分析一次、保存结果，随时重播与声音同步的触觉节奏。"
+      ],
+      [
+        "实时声音",
+        "通过麦克风捕捉附近的音乐和声音，将能量变化转成实时触觉脉冲。"
+      ],
+      [
+        "流媒体",
+        "播放兼容的直接音频或视频链接，边听边感受节奏。HLS 目前仅支持播放。"
+      ]
+    ],
+    "screenNote": "App 实际界面预览；实时声音与流媒体活动使用演示数据。",
+    "waveAlt": "TactiBeat 真实文件分析生成的音频波形",
+    "waveLabel": "从声音，到波形，再到触觉",
+    "tuneHeading": "低音更厚，节拍更清晰，由你选择。",
+    "tuneBody": "选择深沉低频、节拍突出等预设，再调整强度、灵敏度与密度，找到合适的节奏感。已保存的分析结果会保留各自的设置。",
+    "tuneLink": "找到适合你的设置",
+    "tuneAlt": "TactiBeat 的震动风格、映射预设、强度、灵敏度与密度设置",
+    "compatHeading": "播放之前，了解这些就够了。",
+    "compatDevice": "触觉播放需要兼容的 iPhone。可以先体验内置演示，并用“测试触觉”检查设备上的实际感受。",
+    "resourcesHeading": "进一步了解",
+    "endHeading": "让下一段节拍，多一种感受。",
+    "skip": "跳转到正文",
+    "imageLabel": "查看 App 截图"
+  },
+  "zh-Hant": {
+    "tagline": "不只聽見節拍，也能觸到節奏。",
+    "lead": "將節拍與低音化為 iPhone 震動。匯入音訊或影片，感受周遭聲音，或播放相容的串流。",
+    "explore": "了解三種模式",
+    "modeHeading": "你的聲音，三種感受方式。",
+    "modes": [
+      [
+        "音訊與影片檔案",
+        "匯入檔案，或試試內建示範。分析一次、儲存結果，隨時重播與聲音同步的觸覺節奏。"
+      ],
+      [
+        "即時聲音",
+        "透過麥克風擷取附近的音樂與聲音，將能量變化化為即時觸覺脈衝。"
+      ],
+      [
+        "串流",
+        "播放相容的直接音訊或影片連結，邊聽邊感受節奏。HLS 目前僅支援播放。"
+      ]
+    ],
+    "screenNote": "App 畫面以簡體中文展示；即時聲音與串流活動使用示範資料。",
+    "waveAlt": "TactiBeat 實際檔案分析產生的音訊波形",
+    "waveLabel": "從聲音，到波形，再到觸覺",
+    "tuneHeading": "低音更厚，節拍更清晰，由你選擇。",
+    "tuneBody": "選擇深沉低頻、節拍突出等預設，再調整強度、靈敏度與密度，找出合適的節奏感。已儲存的分析結果會保留各自的設定。",
+    "tuneLink": "找到適合你的設定",
+    "tuneAlt": "TactiBeat 的震動風格、映射預設、強度、靈敏度與密度設定",
+    "compatHeading": "播放之前，先了解這些。",
+    "compatDevice": "觸覺播放需要相容的 iPhone。可先體驗內建示範，並用「測試觸覺」確認裝置上的實際感受。",
+    "resourcesHeading": "進一步了解",
+    "endHeading": "讓下一段節拍，多一種感受。",
+    "skip": "跳至正文",
+    "imageLabel": "查看 App 截圖"
+  },
+  "de-DE": {
+    "tagline": "Den Beat nicht nur hören. Auch fühlen.",
+    "lead": "Spüre Beats und Bass als Vibrationen auf dem iPhone. Mit Audio- und Videodateien, Geräuschen in deiner Nähe oder kompatiblen Streams.",
+    "explore": "Drei Modi entdecken",
+    "modeHeading": "Dein Sound. Drei Wege, ihn zu fühlen.",
+    "modes": [
+      [
+        "Audio- und Videodateien",
+        "Importiere eine Datei oder teste eine integrierte Demo. Einmal analysieren, das Ergebnis speichern und den Rhythmus mit synchroner Haptik erneut abspielen."
+      ],
+      [
+        "Live-Sound",
+        "Das Mikrofon erfasst Musik und Geräusche in deiner Nähe und setzt ihre Energie in haptische Impulse in Echtzeit um."
+      ],
+      [
+        "Streams",
+        "Spiele eine kompatible direkte Audio- oder Video-URL ab und fühle den Rhythmus. HLS unterstützt derzeit nur die Wiedergabe."
+      ]
+    ],
+    "screenNote": "App-Ansichten auf vereinfachtem Chinesisch. Live- und Stream-Aktivität mit Demodaten.",
+    "waveAlt": "Wellenform einer echten TactiBeat-Dateianalyse",
+    "waveLabel": "Vom Klang über die Wellenform zur Berührung",
+    "tuneHeading": "Mehr Bass. Klarere Beats. Deine Wahl.",
+    "tuneBody": "Wähle Tiefer Bass, Beat-Fokus oder ein anderes Preset. Passe Intensität, Empfindlichkeit und Dichte an. Gespeicherte Ergebnisse behalten ihre eigenen Einstellungen.",
+    "tuneLink": "Passende Einstellungen finden",
+    "tuneAlt": "TactiBeat-Einstellungen für Haptikstil, Presets, Intensität, Empfindlichkeit und Dichte",
+    "compatHeading": "Gut zu wissen, bevor du startest.",
+    "compatDevice": "Haptik erfordert ein kompatibles iPhone. Prüfe das Gefühl auf deinem Gerät mit einer integrierten Demo und der Funktion zum Testen der Haptik.",
+    "resourcesHeading": "Mehr entdecken",
+    "endHeading": "Gib deinem nächsten Beat eine neue Dimension.",
+    "skip": "Zum Inhalt springen",
+    "imageLabel": "App-Screenshot öffnen"
+  },
+  "fr-FR": {
+    "tagline": "Le rythme ne s’écoute pas seulement. Il se ressent.",
+    "lead": "Transformez les temps forts et les basses en vibrations sur iPhone. Avec vos fichiers audio ou vidéo, les sons ambiants ou un flux compatible.",
+    "explore": "Découvrir les trois modes",
+    "modeHeading": "Votre son. Trois façons de le ressentir.",
+    "modes": [
+      [
+        "Fichiers audio et vidéo",
+        "Importez un fichier ou essayez une démo intégrée. Analysez-le, enregistrez le résultat et retrouvez le rythme avec un retour haptique synchronisé."
+      ],
+      [
+        "Son en direct",
+        "Le microphone capte la musique et les sons autour de vous pour traduire leur énergie en impulsions tactiles en temps réel."
+      ],
+      [
+        "Streaming",
+        "Lisez une URL audio ou vidéo directe compatible et ressentez son rythme. HLS permet actuellement la lecture uniquement."
+      ]
+    ],
+    "screenNote": "Interface présentée en chinois simplifié. Activité en direct et en streaming avec des données de démonstration.",
+    "waveAlt": "Forme d’onde issue d’une véritable analyse de fichier TactiBeat",
+    "waveLabel": "Du son à la forme d’onde, puis au toucher",
+    "tuneHeading": "Plus de basses. Des temps forts plus nets. À vous de choisir.",
+    "tuneBody": "Choisissez Basses profondes, Accent sur le rythme ou un autre préréglage. Ajustez l’intensité, la sensibilité et la densité. Les résultats enregistrés conservent leurs propres réglages.",
+    "tuneLink": "Trouver vos réglages",
+    "tuneAlt": "Réglages TactiBeat : style haptique, préréglages, intensité, sensibilité et densité",
+    "compatHeading": "Quelques repères avant de lancer la lecture.",
+    "compatDevice": "Le retour haptique nécessite un iPhone compatible. Commencez par une démo intégrée et la fonction de test haptique pour vérifier les sensations sur votre appareil.",
+    "resourcesHeading": "Pour aller plus loin",
+    "endHeading": "Donnez une nouvelle dimension au prochain rythme.",
+    "skip": "Aller au contenu",
+    "imageLabel": "Ouvrir la capture de l’app"
+  },
+  "es-ES": {
+    "tagline": "No solo escuches el ritmo. Siéntelo.",
+    "lead": "Convierte los beats y los graves en vibraciones en el iPhone. Usa tus archivos de audio o vídeo, el sonido a tu alrededor o una transmisión compatible.",
+    "explore": "Descubre los tres modos",
+    "modeHeading": "Tu sonido. Tres formas de sentirlo.",
+    "modes": [
+      [
+        "Archivos de audio y vídeo",
+        "Importa un archivo o prueba una demo integrada. Analízalo, guarda el resultado y vuelve a sentir el ritmo con vibraciones sincronizadas."
+      ],
+      [
+        "Sonido en vivo",
+        "El micrófono capta la música y los sonidos cercanos y convierte su energía en impulsos táctiles en tiempo real."
+      ],
+      [
+        "Streaming",
+        "Reproduce una URL directa de audio o vídeo compatible y siente su ritmo. HLS solo admite reproducción por ahora."
+      ]
+    ],
+    "screenNote": "Interfaz mostrada en chino simplificado. La actividad en vivo y de streaming utiliza datos de demostración.",
+    "waveAlt": "Forma de onda de un análisis real de archivos en TactiBeat",
+    "waveLabel": "Del sonido a la onda y al tacto",
+    "tuneHeading": "Más graves. Beats más definidos. Tú eliges.",
+    "tuneBody": "Elige Graves profundos, Enfoque en el ritmo u otro preset. Ajusta intensidad, sensibilidad y densidad. Los resultados guardados conservan sus propios ajustes.",
+    "tuneLink": "Encuentra tus ajustes",
+    "tuneAlt": "Ajustes TactiBeat de estilo háptico, presets, intensidad, sensibilidad y densidad",
+    "compatHeading": "Antes de darle al play.",
+    "compatDevice": "La respuesta háptica requiere un iPhone compatible. Prueba una demo integrada y la función de prueba háptica para comprobar cómo se siente en tu dispositivo.",
+    "resourcesHeading": "Descubre más",
+    "endHeading": "Dale otra dimensión a tu próximo beat.",
+    "skip": "Saltar al contenido",
+    "imageLabel": "Abrir captura de la app"
+  },
+  "ja": {
+    "tagline": "ビートは、聴くだけじゃない。触れて感じる。",
+    "lead": "ビートや低音を iPhone の振動に。音声・動画ファイル、身のまわりの音、対応するストリームで、リズムを感じられます。",
+    "explore": "3つのモードを見る",
+    "modeHeading": "いつもの音に、3つの感じ方。",
+    "modes": [
+      [
+        "音声・動画ファイル",
+        "ファイルを読み込むか、内蔵デモをお試しください。解析結果を保存して、音と同期する触覚リズムを何度でも再生できます。"
+      ],
+      [
+        "ライブサウンド",
+        "マイクで周囲の音楽や音を捉え、音の強弱をリアルタイムの触覚パルスで感じられます。"
+      ],
+      [
+        "ストリーミング",
+        "対応する音声・動画の直接 URL を再生しながら、リズムを感じられます。HLS は現在、再生のみ対応しています。"
+      ]
+    ],
+    "screenNote": "画面は簡体字中国語の表示例です。ライブとストリームの活動表示にはデモデータを使用しています。",
+    "waveAlt": "TactiBeat の実際のファイル解析で生成した波形",
+    "waveLabel": "音から波形へ、そして触覚へ",
+    "tuneHeading": "低音を深く。ビートをくっきり。好みの触覚に。",
+    "tuneBody": "ディープベースやビート重視などのプリセットを選び、強度・感度・密度を調整できます。保存済みの解析結果は、それぞれの設定を保持します。",
+    "tuneLink": "自分に合う設定を探す",
+    "tuneAlt": "TactiBeat の触覚スタイル、プリセット、強度、感度、密度の設定",
+    "compatHeading": "再生する前に、知っておきたいこと。",
+    "compatDevice": "触覚再生には対応する iPhone が必要です。内蔵デモと触覚テストで、お使いの端末での感触をご確認ください。",
+    "resourcesHeading": "もっと詳しく",
+    "endHeading": "次のビートに、新しい感覚を。",
+    "skip": "本文へ移動",
+    "imageLabel": "App のスクリーンショットを開く"
+  },
+  "ko": {
+    "tagline": "비트를 듣는 데서, 느끼는 데로.",
+    "lead": "비트와 저음을 iPhone 진동으로 느껴보세요. 오디오·동영상 파일, 주변 소리, 호환되는 스트림을 사용할 수 있습니다.",
+    "explore": "세 가지 모드 살펴보기",
+    "modeHeading": "나의 소리, 세 가지 감각.",
+    "modes": [
+      [
+        "오디오·동영상 파일",
+        "파일을 가져오거나 내장 데모를 체험해 보세요. 분석 결과를 저장하고 소리와 동기화된 촉각 리듬을 다시 재생할 수 있습니다."
+      ],
+      [
+        "라이브 사운드",
+        "마이크로 주변 음악과 소리를 감지하고 에너지의 변화를 실시간 촉각 펄스로 느낄 수 있습니다."
+      ],
+      [
+        "스트리밍",
+        "호환되는 오디오·동영상 직접 URL을 재생하며 리듬을 느껴보세요. HLS는 현재 재생만 지원합니다."
+      ]
+    ],
+    "screenNote": "앱 화면은 중국어 간체로 표시됩니다. 라이브 및 스트리밍 활동에는 데모 데이터를 사용했습니다.",
+    "waveAlt": "TactiBeat의 실제 파일 분석으로 생성한 파형",
+    "waveLabel": "소리에서 파형으로, 다시 촉각으로",
+    "tuneHeading": "더 깊은 저음, 더 선명한 비트. 원하는 대로.",
+    "tuneBody": "깊은 베이스, 비트 집중 등의 프리셋을 선택하고 강도, 감도, 밀도를 조절하세요. 저장된 분석 결과는 각각의 설정을 유지합니다.",
+    "tuneLink": "나에게 맞는 설정 찾기",
+    "tuneAlt": "TactiBeat의 촉각 스타일, 프리셋, 강도, 감도 및 밀도 설정",
+    "compatHeading": "재생하기 전에 알아두세요.",
+    "compatDevice": "촉각 재생에는 호환되는 iPhone이 필요합니다. 내장 데모와 촉각 테스트로 기기에서 실제 느낌을 확인해 보세요.",
+    "resourcesHeading": "더 알아보기",
+    "endHeading": "다음 비트에 새로운 감각을 더하세요.",
+    "skip": "본문으로 이동",
+    "imageLabel": "앱 스크린샷 열기"
+  }
+}

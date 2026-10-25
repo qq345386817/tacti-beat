@@ -6,6 +6,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urljoin, urlsplit, unquote
 import xml.etree.ElementTree as ET
+from build_site import VERSION
 
 ROOT = Path(__file__).resolve().parents[1]
 ORIGIN = "https://tactibeat.luopeike.com"
@@ -76,6 +77,7 @@ def main():
         assert page.h1 == page.main == 1, (path, 'one h1 and one main required')
         assert page.canonical == url, (path, page.canonical)
         assert page.lang and page.description and page.structured_data, path
+        assert f'../style/base.css?v={VERSION}' in page.targets, (path, 'stale stylesheet version')
         assert not [i for i, n in Counter(page.ids).items() if n > 1], path
         assert page.labels.get('language-select', '').strip(), (path, 'language label')
         assert len(page.options) == 8 and sum('selected' in o for o in page.options) == 1, path
@@ -94,6 +96,9 @@ def main():
         if path.name == 'index.html':
             assert 'HLS' in path.read_text(), path
             assert any(i.get('fetchpriority') == 'high' for i in page.images), path
+            hero = [i for i in page.images if i.get('fetchpriority') == 'high']
+            assert len(hero) == 1 and hero[0]['src'] == '../assets/illustrations/sound-to-touch-v1.webp', path
+            assert hero[0]['width'] == '2172' and hero[0]['height'] == '724', path
         parsed[url] = page
     for url, page in parsed.items():
         for alternate in page.alternates.values():

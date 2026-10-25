@@ -15,7 +15,9 @@ The App palette comes from `HapticMusic/BrandPalette.swift` in the parent App pr
 
 ## Images
 
-`assets/screens/` contains losslessly encoded WebP versions of actual App screenshots from the parent project's October 19 UI validation. They are intentionally versioned product website assets, not test reports. They show the Simplified Chinese App interface; this is stated in every locale. Live/stream activity is demonstration data, also explicitly labeled. The hero shows only a waveform detail; the mode section links to the complete source screenshot. No generated UI or invented device frame is used.
+`assets/illustrations/sound-to-touch-v1.webp` is a conceptual brand illustration generated with the built-in image-generation tool. It visualizes sound becoming tactile pulses, not measured audio or an actual App screen. It has a transparent background, no embedded text, and an explicitly localized concept-illustration caption in every locale. The prompt and provenance are recorded alongside the asset.
+
+`assets/screens/` contains losslessly encoded WebP versions of actual App screenshots from the parent project's October 19 UI validation. They are intentionally versioned product website assets, not test reports. They show the Simplified Chinese App interface; this is stated in every locale. File analysis comes from a real bundled Demo; Live/Stream activity uses demonstration data, also explicitly labeled. These screenshots remain below the conceptual hero so visitors can inspect the real interface. No generated UI or invented device frame is used.
 
 ## Publishing
 

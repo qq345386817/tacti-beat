@@ -4,13 +4,14 @@ import json
 from html import escape
 from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 COPY = json.loads((ROOT / "content/home.json").read_text())
 LANGUAGES = {"en-US": "English", "zh-Hans": "简体中文", "zh-Hant": "繁體中文", "ja": "日本語", "ko": "한국어", "de-DE": "Deutsch", "fr-FR": "Français", "es-ES": "Español"}
 LANGUAGE_LABELS = {"en-US": "Choose language", "zh-Hans": "选择语言", "zh-Hant": "選擇語言", "ja": "言語を選択", "ko": "언어 선택", "de-DE": "Sprache wählen", "fr-FR": "Choisir la langue", "es-ES": "Elegir idioma"}
 STORE = "https://apps.apple.com/app/id6769032242"
-VERSION = "20261024"
+VERSION = "20261025"
 
 
 class Page(HTMLParser):
@@ -22,6 +23,7 @@ class Page(HTMLParser):
         self.depth, self.in_nav = 0, False
         self.anchor, self.paragraph = None, None
         self.language_label = ""
+        self.stylesheet_tags = []
         self.h1 = ""
         self.in_h1 = False
         self.feed(source)
@@ -32,6 +34,8 @@ class Page(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
+        if tag == "link" and a.get("rel") == "stylesheet" and urlsplit(a.get("href", "")).path == "../style/base.css":
+            self.stylesheet_tags.append((self.get_starttag_text(), attrs))
         if tag == "nav" and a.get("class") == "nav":
             self.in_nav = True
         if tag == "a":
@@ -172,8 +176,8 @@ def home(page, help_page, locale):
 <section class="home-hero"><div class="container hero-copy"><h1>TactiBeat</h1>
 <p class="tagline">{escape(c['tagline'])}</p><p class="lead">{escape(c['lead'])}</p>
 <div class="actions">{store_button(download)}{link('#modes', c['explore'], 'text-link')}</div>
-<figure class="waveform-preview"><img src="../assets/screens/analysis.webp" alt="{escape(c['waveAlt'])}" width="1320" height="2868" fetchpriority="high" decoding="async"></figure>
-<p class="wave-caption">{escape(c['waveLabel'])}</p></div></section>
+<figure class="hero-art"><img src="../assets/illustrations/sound-to-touch-v1.webp" alt="{escape(c['heroAlt'])}" width="2172" height="724" fetchpriority="high" decoding="async"><figcaption class="hero-caption">{escape(c['heroLabel'])}</figcaption></figure>
+</div></section>
 <section class="home-section modes-section" id="modes"><div class="container"><div class="section-heading"><h2>{escape(c['modeHeading'])}</h2></div>
 <div class="mode-grid">{modes}</div><p class="screen-note">{escape(c['screenNote'])}</p></div></section>
 <section class="home-section tuning-section"><div class="container tuning-grid"><div><h2>{escape(c['tuneHeading'])}</h2><p class="lead">{escape(c['tuneBody'])}</p>{link('help', c['tuneLink'], 'text-link')}</div>
@@ -194,7 +198,11 @@ def main():
             assert len(page.nav) == 4, path
             head, marker, _ = source.partition("<body")
             assert marker and "</head>" in head, path
-            head = head.replace('../style/base.css"', f'../style/base.css?v={VERSION}"')
+            assert len(page.stylesheet_tags) == 1, path
+            for original, attrs in page.stylesheet_tags:
+                updated = [(key, f'../style/base.css?v={VERSION}' if key == 'href' else value) for key, value in attrs]
+                tag = '<link ' + ' '.join(key + '="' + escape(value, quote=True) + '"' for key, value in updated) + '>'
+                head = head.replace(original, tag)
             if path.name == "index.html":
                 head = ''.join(HomeHead(head, COPY[locale]).parts)
                 body = home(page, parsed["help.html"], locale)

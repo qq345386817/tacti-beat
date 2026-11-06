@@ -68,7 +68,8 @@ a:hover {
   text-underline-offset: 4px;
 }
 a:focus-visible,
-select:focus-visible {
+select:focus-visible,
+summary:focus-visible {
   outline: 3px solid var(--primary);
   outline-offset: 5px;
 }
@@ -484,6 +485,36 @@ h3 {
 .notice {
   font-size: 14px;
   color: var(--muted);
+}
+.faq-list details {
+  padding-block: 18px;
+  border-bottom: 1px solid var(--border);
+}
+.faq-list summary {
+  cursor: pointer;
+  font-weight: 600;
+  min-height: 44px;
+  padding-block: 8px;
+  overflow-wrap: anywhere;
+}
+.faq-list p {
+  margin: 12px 0 0;
+  color: var(--muted);
+}
+.preset-list {
+  columns: 2 220px;
+}
+.preset-list li {
+  break-inside: avoid;
+}
+.breadcrumb {
+  margin-bottom: 24px;
+  color: var(--muted);
+  font-size: 14px;
+}
+.breadcrumb a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 @media (prefers-color-scheme: dark) {
   .text-link,

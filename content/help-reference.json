@@ -1,0 +1,194 @@
+{
+  "en-US": [
+    {
+      "heading": "Why do I feel separate pulses instead of constant vibration?",
+      "items": [
+        "TactiBeat is designed around rhythm-first pulses. Clear gaps make beats easier to read through touch.",
+        "Dense audio may be simplified so the tactile pattern does not collapse into a continuous buzz."
+      ]
+    },
+    {
+      "heading": "What music works best?",
+      "items": [
+        "Tracks with percussion, strong downbeats, rests, and clear energy changes usually feel best.",
+        "Ambient pads, vocals-only material, or very dense mixes may produce less distinct tactile rhythm."
+      ]
+    },
+    {
+      "heading": "Troubleshooting",
+      "items": [
+        "If pulses feel too dense, lower density or sensitivity.",
+        "If pulses feel too weak, raise intensity or try a sharper haptic style.",
+        "If timing feels offset, adjust timing offset until the pulse aligns with the sound."
+      ]
+    }
+  ],
+  "zh-Hans": [
+    {
+      "heading": "为什么我感受到的是分离的脉冲，而不是持续震动？",
+      "items": [
+        "TactiBeat 以节奏优先的脉冲为核心设计。清晰的间隔更容易通过触觉读出节拍。",
+        "对于过于密集的音频，系统会适度简化，以免触觉图案塌缩成一团持续嗡振。"
+      ]
+    },
+    {
+      "heading": "什么样的音乐效果更好？",
+      "items": [
+        "有打击乐、强拍、停顿和明显能量变化的曲目，通常触觉表现更清楚。",
+        "环境铺底、纯人声或非常密集的混音，可能会产生不那么鲜明的触觉节奏。"
+      ]
+    },
+    {
+      "heading": "排查建议",
+      "items": [
+        "如果脉冲太密，可降低密度或灵敏度。",
+        "如果脉冲太弱，可提高强度或尝试更锐利的触觉风格。",
+        "如果感觉时机不对，可调整时间偏移，让脉冲与声音对齐。"
+      ]
+    }
+  ],
+  "zh-Hant": [
+    {
+      "heading": "為什麼我感受到的是分離的脈衝，而不是持續震動？",
+      "items": [
+        "TactiBeat 以節奏優先的脈衝為核心設計。清楚的間隔更容易透過觸覺讀出節拍。",
+        "對於過於密集的音訊，系統會適度簡化，以免觸覺圖樣塌縮成持續嗡振。"
+      ]
+    },
+    {
+      "heading": "什麼樣的音樂效果更好？",
+      "items": [
+        "有打擊樂、強拍、停頓和明顯能量變化的曲目，通常觸覺表現更清楚。",
+        "環境鋪底、純人聲或非常密集的混音，可能會產生較不鮮明的觸覺節奏。"
+      ]
+    },
+    {
+      "heading": "排解建議",
+      "items": [
+        "如果脈衝太密，可降低密度或靈敏度。",
+        "如果脈衝太弱，可提高強度或嘗試更銳利的觸覺風格。",
+        "如果感覺時機不對，可調整時間偏移，讓脈衝與聲音對齊。"
+      ]
+    }
+  ],
+  "ja": [
+    {
+      "heading": "なぜ連続振動ではなく、分離したパルスになるのですか？",
+      "items": [
+        "TactiBeatはリズム重視のパルスを中心に設計されています。明確な間隔がある方が、触覚でビートを読み取りやすくなります。",
+        "非常に密な音声は、触覚パターンが連続したブーン音にならないよう簡略化されることがあります。"
+      ]
+    },
+    {
+      "heading": "どんな音楽が向いていますか？",
+      "items": [
+        "打楽器、強いダウンビート、休符、明確なエネルギー変化がある曲は、触覚で感じやすい傾向があります。",
+        "アンビエントなパッド、ボーカル主体の素材、非常に密なミックスでは、触覚リズムが不明瞭になることがあります。"
+      ]
+    },
+    {
+      "heading": "トラブルシューティング",
+      "items": [
+        "パルスが密すぎる場合は、密度または感度を下げてください。",
+        "パルスが弱すぎる場合は、強度を上げるか、より鋭い触覚スタイルを試してください。",
+        "タイミングがずれて感じる場合は、音に合うまでタイミングオフセットを調整してください。"
+      ]
+    }
+  ],
+  "ko": [
+    {
+      "heading": "왜 지속 진동이 아니라 분리된 펄스로 느껴지나요?",
+      "items": [
+        "TactiBeat은 리듬 중심 펄스를 기준으로 설계되었습니다. 뚜렷한 간격이 있을수록 촉각으로 비트를 읽기 쉽습니다.",
+        "오디오가 매우 빽빽하면 촉각 패턴이 연속적인 웅웅거림으로 무너지지 않도록 단순화될 수 있습니다."
+      ]
+    },
+    {
+      "heading": "어떤 음악이 더 잘 맞나요?",
+      "items": [
+        "타악기, 강한 다운비트, 쉼표, 뚜렷한 에너지 변화가 있는 트랙이 보통 더 잘 느껴집니다.",
+        "앰비언트 패드, 보컬만 있는 소재, 매우 밀집된 믹스는 촉각 리듬이 덜 분명할 수 있습니다."
+      ]
+    },
+    {
+      "heading": "문제 해결",
+      "items": [
+        "펄스가 너무 촘촘하면 밀도나 민감도를 낮추세요.",
+        "펄스가 너무 약하면 강도를 높이거나 더 날카로운 햅틱 스타일을 시도하세요.",
+        "타이밍이 어긋난 느낌이면 소리와 맞을 때까지 타이밍 오프셋을 조정하세요."
+      ]
+    }
+  ],
+  "de-DE": [
+    {
+      "heading": "Warum spüre ich getrennte Impulse statt einer dauerhaften Vibration?",
+      "items": [
+        "TactiBeat ist auf rhythmusorientierte Impulse ausgelegt. Klare Pausen machen Beats über Berührung leichter lesbar.",
+        "Sehr dichtes Audio kann vereinfacht werden, damit das taktile Muster nicht zu einem durchgehenden Summen zusammenfällt."
+      ]
+    },
+    {
+      "heading": "Welche Musik funktioniert am besten?",
+      "items": [
+        "Titel mit Schlagzeug, deutlichen Downbeats, Pausen und klaren Energieänderungen fühlen sich meist am besten an.",
+        "Flächige Ambient-Sounds, rein vokales Material oder sehr dichte Mischungen können ein weniger deutliches taktiles Rhythmusgefühl erzeugen."
+      ]
+    },
+    {
+      "heading": "Fehlerbehebung",
+      "items": [
+        "Wenn Impulse zu dicht wirken, senken Sie Dichte oder Empfindlichkeit.",
+        "Wenn Impulse zu schwach wirken, erhöhen Sie die Intensität oder wählen Sie einen schärferen Haptikstil.",
+        "Wenn das Timing versetzt wirkt, passen Sie den Timing-Versatz an, bis Impuls und Ton zusammenpassen."
+      ]
+    }
+  ],
+  "fr-FR": [
+    {
+      "heading": "Pourquoi est-ce que je ressens des impulsions séparées au lieu d’une vibration continue ?",
+      "items": [
+        "TactiBeat est conçu autour d’impulsions centrées sur le rythme. Des espaces nets rendent les battements plus lisibles par le toucher.",
+        "Un audio très dense peut être simplifié afin que le motif tactile ne se transforme pas en bourdonnement continu."
+      ]
+    },
+    {
+      "heading": "Quelle musique fonctionne le mieux ?",
+      "items": [
+        "Les morceaux avec percussions, temps forts marqués, silences et variations d’énergie claires sont généralement les plus convaincants.",
+        "Les nappes ambiantes, les contenus uniquement vocaux ou les mixages très denses peuvent produire un rythme tactile moins distinct."
+      ]
+    },
+    {
+      "heading": "Dépannage",
+      "items": [
+        "Si les impulsions semblent trop denses, réduisez la densité ou la sensibilité.",
+        "Si elles semblent trop faibles, augmentez l’intensité ou essayez un style haptique plus net.",
+        "Si la synchronisation semble décalée, ajustez le décalage temporel jusqu’à ce que l’impulsion s’aligne sur le son."
+      ]
+    }
+  ],
+  "es-ES": [
+    {
+      "heading": "¿Por qué siento pulsos separados en lugar de una vibración continua?",
+      "items": [
+        "TactiBeat está diseñado en torno a pulsos centrados en el ritmo. Los huecos claros hacen que el compás sea más fácil de leer con el tacto.",
+        "El audio muy denso puede simplificarse para evitar que el patrón táctil se convierta en un zumbido continuo."
+      ]
+    },
+    {
+      "heading": "¿Qué música funciona mejor?",
+      "items": [
+        "Las pistas con percusión, golpes marcados, silencios y cambios claros de energía suelen sentirse mejor.",
+        "Los colchones ambientales, el material solo con voz o las mezclas muy densas pueden producir un ritmo táctil menos definido."
+      ]
+    },
+    {
+      "heading": "Solución de problemas",
+      "items": [
+        "Si los pulsos se sienten demasiado densos, baja la densidad o la sensibilidad.",
+        "Si se sienten demasiado débiles, sube la intensidad o prueba un estilo háptico más marcado.",
+        "Si la sincronización se siente desfasada, ajusta el desfase temporal hasta que el pulso coincida con el sonido."
+      ]
+    }
+  ]
+}

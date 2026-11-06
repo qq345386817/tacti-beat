@@ -1,7 +1,6 @@
 {
   "en-US": {
     "tagline": "Feel the beat. Not just the sound.",
-    "lead": "Turn beats and bass into iPhone vibrations. Bring your audio or video, listen to nearby sound, or play a compatible stream.",
     "explore": "Explore the three modes",
     "modeHeading": "Your sound. Three ways to feel it.",
     "modes": [
@@ -34,7 +33,6 @@
   },
   "zh-Hans": {
     "tagline": "不只听见节拍，也能触到节奏。",
-    "lead": "把节拍与低音变成 iPhone 震动。导入音频或视频，感受周围的声音，或播放兼容的流媒体。",
     "explore": "了解三种模式",
     "modeHeading": "你的声音，三种感受方式。",
     "modes": [
@@ -67,7 +65,6 @@
   },
   "zh-Hant": {
     "tagline": "不只聽見節拍，也能觸到節奏。",
-    "lead": "將節拍與低音化為 iPhone 震動。匯入音訊或影片，感受周遭聲音，或播放相容的串流。",
     "explore": "了解三種模式",
     "modeHeading": "你的聲音，三種感受方式。",
     "modes": [
@@ -100,7 +97,6 @@
   },
   "de-DE": {
     "tagline": "Den Beat nicht nur hören. Auch fühlen.",
-    "lead": "Spüre Beats und Bass als Vibrationen auf dem iPhone. Mit Audio- und Videodateien, Geräuschen in deiner Nähe oder kompatiblen Streams.",
     "explore": "Drei Modi entdecken",
     "modeHeading": "Dein Sound. Drei Wege, ihn zu fühlen.",
     "modes": [
@@ -133,7 +129,6 @@
   },
   "fr-FR": {
     "tagline": "Le rythme ne s’écoute pas seulement. Il se ressent.",
-    "lead": "Transformez les temps forts et les basses en vibrations sur iPhone. Avec vos fichiers audio ou vidéo, les sons ambiants ou un flux compatible.",
     "explore": "Découvrir les trois modes",
     "modeHeading": "Votre son. Trois façons de le ressentir.",
     "modes": [
@@ -166,7 +161,6 @@
   },
   "es-ES": {
     "tagline": "No solo escuches el ritmo. Siéntelo.",
-    "lead": "Convierte los beats y los graves en vibraciones en el iPhone. Usa tus archivos de audio o vídeo, el sonido a tu alrededor o una transmisión compatible.",
     "explore": "Descubre los tres modos",
     "modeHeading": "Tu sonido. Tres formas de sentirlo.",
     "modes": [
@@ -199,7 +193,6 @@
   },
   "ja": {
     "tagline": "ビートは、聴くだけじゃない。触れて感じる。",
-    "lead": "ビートや低音を iPhone の振動に。音声・動画ファイル、身のまわりの音、対応するストリームで、リズムを感じられます。",
     "explore": "3つのモードを見る",
     "modeHeading": "いつもの音に、3つの感じ方。",
     "modes": [
@@ -232,7 +225,6 @@
   },
   "ko": {
     "tagline": "비트를 듣는 데서, 느끼는 데로.",
-    "lead": "비트와 저음을 iPhone 진동으로 느껴보세요. 오디오·동영상 파일, 주변 소리, 호환되는 스트림을 사용할 수 있습니다.",
     "explore": "세 가지 모드 살펴보기",
     "modeHeading": "나의 소리, 세 가지 감각.",
     "modes": [

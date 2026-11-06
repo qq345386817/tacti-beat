@@ -5,11 +5,58 @@ Static, eight-locale website for TactiBeat. Production is served by the existing
 ## Editing
 
 - Home copy: `content/home.json`.
+- Product summaries, help steps, source boundaries and questions: `content/product.json`.
+- Retained rhythm, material-selection and tuning advice: `content/help-reference.json`.
+- Public App copy and exact localized preset names: `content/store-metadata.json`.
 - Shared layout generator: `scripts/build_site.py`.
 - Shared visual tokens, responsive layout and reference-page typography: `style/base.css`.
-- Reference page content and SEO metadata: the localized HTML files.
+- Topic examples, support contact and privacy-policy sections: the localized HTML files.
 
-Run `python3 scripts/build_site.py` after editing home copy or the shared layout generator. It preserves existing page heads, canonical routes, hreflang and all reference-page sections. Generated HTML remains committed so production needs no JavaScript framework or build step. Run `python3 scripts/check_site.py` before publishing.
+When App metadata changes, run `python3 scripts/sync_metadata.py` from this website
+checkout inside the App project. Only names, subtitles, descriptions, promotional
+copy, six preset names and the referenced App control names are imported. Keywords, private review information and
+credentials are never exported. Source hashes are for drift detection, not proof
+that local metadata has been published in the App Store. A standalone checkout can
+pass `--app-root /path/to/HapticMusic` explicitly.
+
+Run `python3 scripts/build_site.py` after editing content. It refreshes localized
+titles/descriptions, social previews, App/WebPage/FAQ/Breadcrumb entities and visible
+product/help sections while preserving canonical routes, hreflang and legal-policy
+sections. The generator is idempotent. Generated HTML remains committed, with no
+client-side rendering or production build dependency.
+
+Before publishing:
+
+```sh
+python3 scripts/sync_metadata.py --check  # when the parent App checkout is available
+python3 scripts/build_site.py
+python3 scripts/check_site.py
+```
+
+Update `UPDATED` in the generator only when publishing actual content changes; it
+is used consistently for page `dateModified` and sitemap `lastmod`. Do not stamp
+every build with the current time. The checks cover all 64 canonical pages and
+require FAQ schema answers to match the visible localized answers exactly.
+
+## Search And AI Retrieval
+
+The site presents four bundled demos, six presets, separate file/microphone/direct
+URL paths, saved-result settings and device requirements in crawlable HTML. Each
+topic page answers a distinct intent and links to related pages. HLS is playback
+only, protected music-service streams are unsupported, and Live Sound does not
+capture other apps' internal audio. These limits remain visible, not only in JSON-LD.
+Unreleased Duo layout changes are not marketed as publicly available features.
+
+Stable App IDs and localized descriptions help disambiguate the product. No
+unverified price, ratings, release version, "first/only" or medical benefit is
+inserted into structured data. Square App icons use a square social-card format.
+Existing privacy disclosures remain unchanged.
+
+Google's [AI search guidance](https://developers.google.com/search/docs/appearance/ai-features)
+does not require special AI markup or an AI text file. Clear answers, crawlability,
+internal links and accurate structured data are the focus here; adding FAQ schema
+does not promise FAQ rich results, indexing or AI citations. Track actual discovery
+in Search Console rather than interpreting validator success as a ranking gain.
 
 The App palette comes from `HapticMusic/BrandPalette.swift` in the parent App project. Local editable design-system and design-canvas artifacts are kept outside this deployable repository. The App's six identity colors are unchanged; website text and surface colors are adjusted for contrast. Use full-width bands and quiet reading layouts, not nested decorative cards.
 

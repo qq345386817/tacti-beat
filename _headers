@@ -2,6 +2,8 @@
   X-Robots-Tag: noindex
 /scripts/*
   X-Robots-Tag: noindex
+/README.md
+  X-Robots-Tag: noindex
 /assets/screens/*
   Cache-Control: public, max-age=86400
 /assets/illustrations/*

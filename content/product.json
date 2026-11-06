@@ -1,0 +1,210 @@
+{
+  "en-US": {
+    "seoTitle": "TactiBeat: Haptic Music & Vibration for iPhone",
+    "summary": "Feel beats and bass as iPhone vibrations. Try four built-in demos, save audio and video analyses, and explore six haptic presets.",
+    "helpTitle": "TactiBeat Help: Demos, Haptic Presets & Sound Sources",
+    "helpLead": "Start with a built-in demo, choose the right sound source, and tune the haptics on a compatible iPhone.",
+    "supportLead": "Get help with file imports, saved haptics, Live Sound, compatible stream URLs and settings in TactiBeat.",
+    "stepsHeading": "Try your first tactile beat",
+    "steps": ["Open one of the four built-in demos. Its audio is included with the app; there is no track download to wait for.", "Tap Analyze in the demo, then Play + Haptics. Imported local audio and video files start analysis automatically after preparation.", "Open Settings from the file, Live Sound or stream page. Compare the six mapping presets and adjust intensity, sensitivity, density or timing offset.", "Saved results keep the settings used to create them. To apply a different feel, choose Regenerate, review the settings and save to analyze again."],
+    "presetsHeading": "Six ways to shape the feel",
+    "settingsBody": "Compare the same demo with different presets. {feelCheck} summarizes strength, rhythm and edge; {testHaptic} checks device output. {pocketMode} simplifies the Live Sound screen, but does not promise background or lock-screen listening.",
+    "faqHeading": "Questions before you press play",
+    "faq": [
+      {"id": "demos", "q": "Can I try TactiBeat without downloading a track?", "a": "Yes. Four CC0 demo tracks are bundled with the app. Open a demo, tap Analyze and play its generated haptics on a compatible iPhone. The demo audio does not need a separate download."},
+      {"id": "sources", "q": "Which audio sources support haptics?", "a": "Analyze complete local audio or video files and replay saved results offline. Live Sound uses the microphone with permission. Compatible direct audio and video URLs can drive haptics while playing and need a network connection. HLS supports playback only, without real-time haptic analysis; protected music-service streams are not supported."},
+      {"id": "device", "q": "Why do I hear audio but feel no vibration?", "a": "Haptic output requires an iPhone with supported haptic hardware. Use Test Haptic to check output. In Live Sound, allow microphone access, move closer to the sound and adjust sensitivity if the input is too quiet. iPad layouts do not imply equivalent vibration hardware. The effect varies with the device, material and settings."},
+      {"id": "other-apps", "q": "Does TactiBeat capture audio inside other apps?", "a": "No. Live Sound listens to nearby sound through the microphone; it is not system-audio capture. Use your own files or a compatible direct media URL for playback inside TactiBeat."},
+      {"id": "saved", "q": "Do new settings change my saved haptic results?", "a": "No. Saved analyses retain their own settings. Open Settings from an analysis, Live Sound or stream page to change defaults. For an existing file result, choose Regenerate and save the reviewed settings to generate a new analysis."},
+      {"id": "limits", "q": "Can vibration reproduce melody or improve hearing?", "a": "Phone vibration cannot faithfully preserve pitch, lyrics or timbre. TactiBeat focuses on timing, pulse and rhythmic feel. It is not a medical device and does not replace hearing aids, cochlear implants, clinical care or professional advice."}
+    ],
+    "routeLeads": {
+      "haptic-music-app": "Feel music as tactile rhythm on iPhone. Start with four bundled demos, analyze your own audio or video, then compare six haptic presets and save the result for replay.",
+      "music-vibration-app": "Turn clear beats and bass changes into separated iPhone vibrations. Compare Deep Bass and Beat Focus, then tune intensity, sensitivity, density and timing for your material.",
+      "live-audio-haptics": "Use the microphone for nearby sound or a compatible direct audio or video URL for in-app streaming haptics. These are separate inputs; HLS supports playback only, not real-time haptic analysis.",
+      "tactile-audio-accessibility": "Explore timing and rhythm through touch alongside audio. TactiBeat offers demos, visible haptic events and adjustable presets, without claiming to reproduce hearing or provide medical treatment."
+    }
+  },
+  "zh-Hans": {
+    "seoTitle": "TactiBeat 触觉音乐：让 iPhone 跟着节拍与低音震动",
+    "summary": "用 iPhone 震动感受节拍与低音。先试四首内置演示，再体验六种触觉预设、本地音视频分析、麦克风实时声音和兼容流媒体直链。",
+    "helpTitle": "TactiBeat 帮助：内置演示、触觉预设与声音来源",
+    "helpLead": "从内置演示开始，选对声音来源，再在兼容的 iPhone 上调出适合自己的触感。",
+    "supportLead": "获取 TactiBeat 文件导入、已保存触觉、实时声音、兼容流媒体链接和设置方面的帮助。",
+    "stepsHeading": "体验第一段触觉节拍",
+    "steps": ["打开四首内置演示中的任意一首。音频已随 App 内置，无需等待单独下载。", "在演示页点击“分析”，完成后点击“播放 + 触觉”。导入自己的本地音频或视频时，准备完成后会自动开始分析。", "从文件分析、实时声音或流媒体页面进入“设置”，对比六种映射预设，调整强度、灵敏度、密度或时间偏移。", "已保存的结果保留生成时的设置。如需改变触感，点击“重新生成”，确认设置并保存后再次分析。"],
+    "presetsHeading": "六种预设，找到合适的触感",
+    "settingsBody": "用同一首演示对比不同预设。“{feelCheck}”帮助查看强度、节奏和锐度，“{testHaptic}”检查设备输出。“{pocketMode}”简化实时声音界面，但不代表支持后台或锁屏监听。",
+    "faqHeading": "播放之前，你可能想知道",
+    "faq": [
+      {"id": "demos", "q": "不下载歌曲，也能体验 TactiBeat 吗？", "a": "可以。App 内置四首 CC0 演示音频，打开演示、点击“分析”，即可在兼容的 iPhone 上播放生成的触觉节奏。演示音频无需另外下载。"},
+      {"id": "sources", "q": "哪些声音来源支持触觉？", "a": "完整的本地音频或视频可以分析，已保存的结果可离线重播；实时声音使用经授权的麦克风；兼容的音频、视频直链可以在联网播放时驱动触觉。HLS 仅支持播放，不支持实时触觉分析；不支持受保护的音乐服务流。"},
+      {"id": "device", "q": "为什么有声音，却没有震动？", "a": "触觉输出需要支持触觉硬件的 iPhone，可先用“测试触觉”检查。实时声音模式还需允许麦克风访问；声音过小时，可靠近声源并调整灵敏度。iPad 界面支持不代表具备同等震动硬件。实际效果会随设备、素材和设置变化。"},
+      {"id": "other-apps", "q": "可以直接读取其他 App 内部播放的声音吗？", "a": "不可以。实时声音通过麦克风听取附近的声音，不是系统内部音频采集。要在 TactiBeat 内播放并生成触觉，请使用自己的文件或兼容的媒体直链。"},
+      {"id": "saved", "q": "修改设置，会改写已保存的触觉结果吗？", "a": "不会。已保存的分析保留各自的设置。文件分析、实时声音和流媒体页面都可进入“设置”修改默认参数；如需改变现有文件结果，请点击“重新生成”，确认并保存设置后重新分析。"},
+      {"id": "limits", "q": "震动能还原旋律，或改善听力吗？", "a": "手机震动无法准确保留音高、歌词或音色。TactiBeat 关注时序、脉冲和节奏感，不是医疗设备，不能替代助听器、人工耳蜗、临床护理或专业建议。"}
+    ],
+    "routeLeads": {
+      "haptic-music-app": "用 iPhone 触觉感受音乐节奏。先试四首内置演示，再分析自己的音频或视频，对比六种触觉预设，并保存结果反复播放。",
+      "music-vibration-app": "把清晰的节拍和低频变化变成有间隔的 iPhone 震动。对比深沉低频与节拍突出，再按素材调整强度、灵敏度、密度和时间偏移。",
+      "live-audio-haptics": "通过麦克风感受附近的声音，或在 App 内播放兼容的音频、视频直链并生成触觉。两种输入互相独立；HLS 仅支持播放，不支持实时触觉分析。",
+      "tactile-audio-accessibility": "在聆听之外，用触觉探索时序和节奏。TactiBeat 提供内置演示、可视化触觉事件与可调预设，不声称能够还原听觉或提供医疗治疗。"
+    }
+  },
+  "zh-Hant": {
+    "seoTitle": "TactiBeat 觸覺音樂：用 iPhone 震動感受節拍與低音",
+    "summary": "用 iPhone 震動感受節拍與低音。先試四首內建示範，再體驗六種觸覺預設、本機音訊與影片分析、麥克風即時聲音及相容串流直連。",
+    "helpTitle": "TactiBeat 說明：內建示範、觸覺預設與聲音來源",
+    "helpLead": "從內建示範開始，選對聲音來源，再於相容的 iPhone 上調出適合自己的觸感。",
+    "supportLead": "取得 TactiBeat 檔案匯入、已儲存觸覺、即時聲音、相容串流連結與設定的協助。",
+    "stepsHeading": "體驗第一段觸覺節拍",
+    "steps": ["開啟四首內建示範中的任意一首。音訊已隨 App 內建，不必等待另外下載。", "在示範頁點選「分析」，完成後點選「播放 + 觸覺」。匯入自己的本機音訊或影片時，準備完成後會自動開始分析。", "從檔案分析、即時聲音或串流頁面進入「設定」，比較六種映射預設，調整強度、靈敏度、密度或時間偏移。", "已儲存的結果保留產生時的設定。如需改變觸感，點選「重新產生」，確認設定並儲存後再次分析。"],
+    "presetsHeading": "六種預設，找到合適的觸感",
+    "settingsBody": "以同一首示範比較不同預設。「{feelCheck}」協助查看強度、節奏與銳度，「{testHaptic}」檢查裝置輸出。「{pocketMode}」簡化即時聲音介面，但不表示支援背景或鎖定畫面監聽。",
+    "faqHeading": "播放前，你可能想知道",
+    "faq": [
+      {"id": "demos", "q": "不下載歌曲，也能體驗 TactiBeat 嗎？", "a": "可以。App 內建四首 CC0 示範音訊，開啟示範、點選「分析」，即可在相容的 iPhone 上播放產生的觸覺節奏。示範音訊不必另外下載。"},
+      {"id": "sources", "q": "哪些聲音來源支援觸覺？", "a": "完整的本機音訊或影片可供分析，已儲存的結果可離線重播；即時聲音使用經授權的麥克風；相容的音訊、影片直連可在連網播放時驅動觸覺。HLS 僅支援播放，不支援即時觸覺分析；不支援受保護的音樂服務串流。"},
+      {"id": "device", "q": "為什麼有聲音，卻沒有震動？", "a": "觸覺輸出需要支援觸覺硬體的 iPhone，可先以「測試觸覺」檢查。即時聲音模式也須允許麥克風存取；聲音太小時，可靠近聲源並調整靈敏度。支援 iPad 介面不表示具備同等震動硬體。實際效果會隨裝置、素材與設定改變。"},
+      {"id": "other-apps", "q": "可以直接擷取其他 App 內部播放的聲音嗎？", "a": "不可以。即時聲音透過麥克風聽取附近的聲音，並非系統內部音訊擷取。若要在 TactiBeat 內播放並產生觸覺，請使用自己的檔案或相容的媒體直連。"},
+      {"id": "saved", "q": "修改設定，會改寫已儲存的觸覺結果嗎？", "a": "不會。已儲存的分析保留各自的設定。檔案分析、即時聲音與串流頁面皆可進入「設定」修改預設參數；若要改變既有檔案結果，請點選「重新產生」，確認並儲存設定後重新分析。"},
+      {"id": "limits", "q": "震動能還原旋律，或改善聽力嗎？", "a": "手機震動無法準確保留音高、歌詞或音色。TactiBeat 聚焦於時序、脈衝與節奏感，並非醫療裝置，不能取代助聽器、人工耳蝸、臨床照護或專業建議。"}
+    ],
+    "routeLeads": {
+      "haptic-music-app": "以 iPhone 觸覺感受音樂節奏。先試四首內建示範，再分析自己的音訊或影片，比較六種觸覺預設，並儲存結果反覆播放。",
+      "music-vibration-app": "把清楚的節拍與低頻變化化為有間隔的 iPhone 震動。比較深沉低頻與節拍突出，再依素材調整強度、靈敏度、密度和時間偏移。",
+      "live-audio-haptics": "透過麥克風感受附近聲音，或在 App 內播放相容的音訊、影片直連並產生觸覺。兩種輸入互相獨立；HLS 僅支援播放，不支援即時觸覺分析。",
+      "tactile-audio-accessibility": "在聆聽之外，以觸覺探索時序與節奏。TactiBeat 提供內建示範、可視化觸覺事件及可調預設，不聲稱能還原聽覺或提供醫療治療。"
+    }
+  },
+  "ja": {
+    "seoTitle": "TactiBeat 触覚音楽：iPhoneでビートと低音を振動に",
+    "summary": "ビートと低音をiPhoneの振動で体感。4曲の内蔵デモ、6種類の触覚プリセット、音声・動画の解析、マイク入力、対応する配信URLを試せます。",
+    "helpTitle": "TactiBeat ヘルプ：デモ・触覚プリセット・音声入力",
+    "helpLead": "内蔵デモから始め、音声の入力方法を選んで、対応するiPhoneで触感を調整しましょう。",
+    "supportLead": "TactiBeatのファイル読み込み、保存した触覚、ライブサウンド、対応する配信URL、設定についてのサポート。",
+    "stepsHeading": "最初の触覚ビートを体験する",
+    "steps": ["4曲の内蔵デモから1曲を開きます。音声はアプリに含まれているため、別途ダウンロードを待つ必要はありません。", "デモ画面で解析し、完了後に音声と触覚を再生します。自分のローカル音声・動画ファイルを読み込む場合は、準備後に自動で解析が始まります。", "ファイル解析、ライブサウンド、ストリームの画面から設定を開き、6種類のマッピングプリセットや強度・感度・密度・タイミングを調整します。", "保存済みの結果は生成時の設定を保持します。触感を変えるには再生成を選び、設定を確認して保存し、もう一度解析します。"],
+    "presetsHeading": "6種類のプリセットで触感を比較",
+    "settingsBody": "同じデモでプリセットを比較できます。「{feelCheck}」では強さ・リズム・エッジを確認し、「{testHaptic}」では端末の出力を確かめられます。「{pocketMode}」はライブサウンド画面を簡素化しますが、バックグラウンドやロック中の監視を保証する機能ではありません。",
+    "faqHeading": "再生前によくある質問",
+    "faq": [
+      {"id": "demos", "q": "曲をダウンロードせずに試せますか？", "a": "はい。4曲のCC0デモ音声が内蔵されています。デモを開いて解析し、対応するiPhoneで生成された触覚リズムを再生できます。デモ音声の追加ダウンロードは不要です。"},
+      {"id": "sources", "q": "どの音声入力が触覚に対応していますか？", "a": "完全なローカル音声・動画ファイルを解析し、保存した結果をオフラインで再生できます。ライブサウンドは許可を得てマイクを使用します。対応する音声・動画の直接URLでは、ネット接続中の再生に合わせて触覚を生成できます。HLSは再生のみで、リアルタイム触覚解析には非対応です。保護された音楽サービスのストリームには対応していません。"},
+      {"id": "device", "q": "音は聞こえるのに振動しないのはなぜですか？", "a": "触覚出力には対応する触覚ハードウェアを備えたiPhoneが必要です。触覚テストで確認してください。ライブサウンドではマイクを許可し、入力が小さければ音源に近づくか感度を調整します。iPad用の画面があることは、同等の振動機能があることを意味しません。感触は端末・素材・設定によって異なります。"},
+      {"id": "other-apps", "q": "他のアプリ内の音声を直接取得しますか？", "a": "いいえ。ライブサウンドはマイクで周囲の音を拾うもので、システム内部音声の取得ではありません。TactiBeat内で再生するには、自分のファイルか対応するメディアの直接URLを使用してください。"},
+      {"id": "saved", "q": "設定を変えると保存済みの結果も変わりますか？", "a": "変わりません。保存済みの解析はそれぞれの設定を保持します。ファイル解析、ライブサウンド、ストリームの画面から設定を変更できます。既存のファイル結果を変えるには再生成を選び、設定を確認・保存して再解析してください。"},
+      {"id": "limits", "q": "振動で旋律を再現したり、聴力を改善したりできますか？", "a": "スマートフォンの振動では音高・歌詞・音色を忠実に保てません。TactiBeatはタイミング、パルス、リズム感に重点を置いています。医療機器ではなく、補聴器、人工内耳、臨床ケア、専門家の助言に代わるものではありません。"}
+    ],
+    "routeLeads": {
+      "haptic-music-app": "iPhoneの触覚で音楽のリズムを感じましょう。4曲の内蔵デモから始め、自分の音声や動画を解析し、6種類の触覚プリセットを比較して結果を保存できます。",
+      "music-vibration-app": "明確なビートや低音の変化を、間隔のあるiPhoneの振動へ。ディープベースやビート重視を比較し、素材に合わせて強度・感度・密度・タイミングを調整できます。",
+      "live-audio-haptics": "マイクで周囲の音を拾う方法と、対応する音声・動画の直接URLをアプリ内で再生する方法は別の入力経路です。HLSは再生のみで、リアルタイム触覚解析には対応していません。",
+      "tactile-audio-accessibility": "音声とともに、触覚でタイミングやリズムを探索できます。デモ、視覚的な触覚イベント、調整可能なプリセットを用意していますが、聴覚の再現や医療効果をうたうものではありません。"
+    }
+  },
+  "ko": {
+    "seoTitle": "TactiBeat 햅틱 음악: iPhone 진동으로 비트와 저음 체험",
+    "summary": "비트와 저음을 iPhone 진동으로 느껴보세요. 내장 데모 4곡, 햅틱 프리셋 6개, 오디오·동영상 분석, 마이크 입력, 호환되는 스트림 URL을 지원합니다.",
+    "helpTitle": "TactiBeat 도움말: 데모, 햅틱 프리셋과 소리 입력",
+    "helpLead": "내장 데모부터 시작해 소리 입력 방식을 선택하고, 호환되는 iPhone에서 나에게 맞는 촉감을 찾아보세요.",
+    "supportLead": "TactiBeat 파일 가져오기, 저장된 햅틱, 라이브 사운드, 호환 스트림 URL과 설정에 대한 도움을 받으세요.",
+    "stepsHeading": "첫 촉각 비트 체험하기",
+    "steps": ["내장 데모 4곡 중 하나를 여세요. 오디오는 앱에 포함되어 있어 별도 다운로드를 기다릴 필요가 없습니다.", "데모 화면에서 분석한 뒤 오디오와 햅틱을 재생하세요. 내 로컬 오디오나 동영상 파일을 가져오면 준비가 끝난 후 분석이 자동으로 시작됩니다.", "파일 분석, 라이브 사운드 또는 스트림 화면에서 설정을 열고 매핑 프리셋 6개를 비교하며 강도, 감도, 밀도와 타이밍을 조절하세요.", "저장된 결과는 생성 당시의 설정을 유지합니다. 촉감을 바꾸려면 다시 생성을 선택하고 설정을 확인·저장한 뒤 다시 분석하세요."],
+    "presetsHeading": "프리셋 6개로 촉감 비교하기",
+    "settingsBody": "같은 데모로 프리셋을 비교할 수 있습니다. ‘{feelCheck}’에서 강도, 리듬과 선명함을 보고 ‘{testHaptic}’로 기기 출력을 확인할 수 있습니다. ‘{pocketMode}’는 라이브 사운드 화면을 단순화하지만 백그라운드나 잠금 화면에서의 청취를 보장하지는 않습니다.",
+    "faqHeading": "재생 전에 궁금한 점",
+    "faq": [
+      {"id": "demos", "q": "곡을 다운로드하지 않고 체험할 수 있나요?", "a": "네. 앱에는 CC0 데모 오디오 4곡이 포함되어 있습니다. 데모를 열고 분석하면 호환되는 iPhone에서 생성된 햅틱 리듬을 재생할 수 있습니다. 데모 오디오는 따로 다운로드할 필요가 없습니다."},
+      {"id": "sources", "q": "어떤 소리 입력이 햅틱을 지원하나요?", "a": "완전한 로컬 오디오·동영상 파일을 분석하고 저장된 결과를 오프라인으로 재생할 수 있습니다. 라이브 사운드는 권한을 받아 마이크를 사용합니다. 호환되는 오디오·동영상 직접 URL은 네트워크로 재생하면서 햅틱을 생성할 수 있습니다. HLS는 재생만 지원하며 실시간 햅틱 분석은 지원하지 않습니다. 보호된 음악 서비스 스트림도 지원하지 않습니다."},
+      {"id": "device", "q": "소리는 나는데 진동이 없는 이유는 무엇인가요?", "a": "햅틱 출력에는 지원되는 햅틱 하드웨어를 갖춘 iPhone이 필요합니다. 햅틱 테스트로 출력을 확인하세요. 라이브 사운드에서는 마이크 권한을 허용하고, 입력이 작다면 음원에 가까이 가거나 감도를 조절하세요. iPad용 화면이 있다고 같은 진동 하드웨어가 있는 것은 아닙니다. 촉감은 기기, 소재와 설정에 따라 달라집니다."},
+      {"id": "other-apps", "q": "다른 앱 내부에서 재생되는 소리를 직접 가져오나요?", "a": "아니요. 라이브 사운드는 마이크로 주변 소리를 듣는 기능이며 시스템 내부 오디오 캡처가 아닙니다. TactiBeat 안에서 재생하려면 내 파일이나 호환되는 미디어 직접 URL을 사용하세요."},
+      {"id": "saved", "q": "설정을 바꾸면 저장된 햅틱 결과도 바뀌나요?", "a": "아니요. 저장된 분석은 각자의 설정을 유지합니다. 파일 분석, 라이브 사운드 또는 스트림 화면에서 설정을 열어 기본값을 바꿀 수 있습니다. 기존 파일 결과를 바꾸려면 다시 생성을 선택하고 설정을 확인·저장한 뒤 재분석하세요."},
+      {"id": "limits", "q": "진동으로 멜로디를 재현하거나 청력을 개선할 수 있나요?", "a": "휴대전화 진동은 음높이, 가사나 음색을 충실하게 보존할 수 없습니다. TactiBeat는 타이밍, 펄스와 리듬감에 집중합니다. 의료 기기가 아니며 보청기, 인공와우, 임상 치료나 전문가의 조언을 대체하지 않습니다."}
+    ],
+    "routeLeads": {
+      "haptic-music-app": "iPhone 햅틱으로 음악의 리듬을 느껴보세요. 내장 데모 4곡으로 시작해 내 오디오나 동영상을 분석하고, 햅틱 프리셋 6개를 비교한 뒤 결과를 저장할 수 있습니다.",
+      "music-vibration-app": "뚜렷한 비트와 저음 변화를 간격 있는 iPhone 진동으로 바꿔보세요. 깊은 베이스와 비트 집중을 비교하고 소재에 맞게 강도, 감도, 밀도와 타이밍을 조절할 수 있습니다.",
+      "live-audio-haptics": "마이크로 주변 소리를 듣는 방식과 호환되는 오디오·동영상 직접 URL을 앱에서 재생하는 방식은 별개의 입력입니다. HLS는 재생만 지원하며 실시간 햅틱 분석은 지원하지 않습니다.",
+      "tactile-audio-accessibility": "오디오와 함께 촉각으로 타이밍과 리듬을 탐색하세요. 데모, 시각적인 햅틱 이벤트와 조절 가능한 프리셋을 제공하지만 청각 재현이나 의료 효과를 주장하지 않습니다."
+    }
+  },
+  "de-DE": {
+    "seoTitle": "TactiBeat: Haptik-Musik und Vibrationen fürs iPhone",
+    "summary": "Beats und Bass als iPhone-Vibrationen fühlen: vier integrierte Demos, sechs Haptik-Presets, Dateianalyse, Mikrofon und kompatible Stream-URLs.",
+    "helpTitle": "TactiBeat-Hilfe: Demos, Haptik-Presets und Audioquellen",
+    "helpLead": "Starte mit einer integrierten Demo, wähle die passende Audioquelle und stimme die Haptik auf einem kompatiblen iPhone ab.",
+    "supportLead": "Hilfe zu Dateiimport, gespeicherter Haptik, Live-Sound, kompatiblen Stream-URLs und Einstellungen in TactiBeat.",
+    "stepsHeading": "Den ersten Beat fühlen",
+    "steps": ["Öffne eine der vier integrierten Demos. Die Audiodateien sind in der App enthalten; ein zusätzlicher Download ist nicht nötig.", "Starte in der Demo die Analyse und anschließend die Wiedergabe mit Haptik. Eigene lokale Audio- oder Videodateien werden nach der Vorbereitung automatisch analysiert.", "Öffne die Einstellungen auf der Datei-, Live-Sound- oder Stream-Seite. Vergleiche sechs Mapping-Presets und passe Intensität, Empfindlichkeit, Dichte oder Zeitversatz an.", "Gespeicherte Ergebnisse behalten ihre ursprünglichen Einstellungen. Wähle zum Ändern die erneute Generierung, prüfe und speichere die Einstellungen und analysiere noch einmal."],
+    "presetsHeading": "Sechs Presets für dein Tastgefühl",
+    "settingsBody": "Vergleiche Presets mit derselben Demo. „{feelCheck}“ zeigt Stärke, Rhythmus und Kante; mit „{testHaptic}“ prüfst du die Ausgabe. „{pocketMode}“ vereinfacht die Live-Sound-Ansicht, verspricht aber kein Mithören im Hintergrund oder bei gesperrtem Bildschirm.",
+    "faqHeading": "Fragen vor der Wiedergabe",
+    "faq": [
+      {"id": "demos", "q": "Kann ich TactiBeat ohne Track-Download ausprobieren?", "a": "Ja. Vier CC0-Demotracks sind in der App enthalten. Öffne eine Demo, analysiere sie und spiele die erzeugte Haptik auf einem kompatiblen iPhone ab. Ein zusätzlicher Download der Demo-Audios ist nicht nötig."},
+      {"id": "sources", "q": "Welche Audioquellen unterstützen Haptik?", "a": "Vollständige lokale Audio- und Videodateien lassen sich analysieren; gespeicherte Ergebnisse kannst du offline wiedergeben. Live-Sound nutzt das Mikrofon mit Erlaubnis. Kompatible direkte Audio- und Video-URLs können bei der Online-Wiedergabe Haptik erzeugen. HLS unterstützt nur die Wiedergabe, keine Echtzeit-Haptikanalyse. Geschützte Musikdienst-Streams werden nicht unterstützt."},
+      {"id": "device", "q": "Warum höre ich Audio, spüre aber keine Vibration?", "a": "Haptik erfordert ein iPhone mit unterstützter Haptikhardware. Prüfe die Ausgabe mit dem Haptiktest. Erlaube für Live-Sound den Mikrofonzugriff und gehe bei leisem Eingang näher an die Quelle oder passe die Empfindlichkeit an. Eine iPad-Ansicht bedeutet nicht gleichwertige Vibrationshardware. Das Gefühl hängt von Gerät, Material und Einstellungen ab."},
+      {"id": "other-apps", "q": "Erfasst TactiBeat Audio innerhalb anderer Apps?", "a": "Nein. Live-Sound hört Umgebungsgeräusche über das Mikrofon und ist keine Aufnahme des internen Systemtons. Verwende für die Wiedergabe in TactiBeat eigene Dateien oder eine kompatible direkte Medien-URL."},
+      {"id": "saved", "q": "Ändern neue Einstellungen gespeicherte Haptik?", "a": "Nein. Gespeicherte Analysen behalten ihre eigenen Einstellungen. Die Einstellungen sind von der Datei-, Live-Sound- und Stream-Seite erreichbar. Um ein vorhandenes Dateiergebnis zu ändern, wähle die erneute Generierung und speichere die geprüften Einstellungen für eine neue Analyse."},
+      {"id": "limits", "q": "Kann Vibration Melodien nachbilden oder das Hören verbessern?", "a": "Handyvibration kann Tonhöhe, Liedtext oder Klangfarbe nicht originalgetreu erhalten. TactiBeat konzentriert sich auf Timing, Impulse und Rhythmusgefühl. Die App ist kein Medizinprodukt und ersetzt weder Hörgeräte, Cochlea-Implantate, klinische Versorgung noch fachlichen Rat."}
+    ],
+    "routeLeads": {
+      "haptic-music-app": "Musik als taktilen Rhythmus auf dem iPhone fühlen: vier integrierte Demos ausprobieren, eigene Audio- oder Videodateien analysieren, sechs Haptik-Presets vergleichen und Ergebnisse speichern.",
+      "music-vibration-app": "Klare Beats und Bassänderungen werden zu getrennten iPhone-Vibrationen. Vergleiche Tiefer Bass und Beat-Fokus und passe Intensität, Empfindlichkeit, Dichte und Zeitversatz an dein Material an.",
+      "live-audio-haptics": "Nutze das Mikrofon für Umgebungsgeräusche oder eine kompatible direkte Audio- oder Video-URL für Haptik bei der Wiedergabe. Die Eingänge sind getrennt; HLS bietet nur Wiedergabe, keine Echtzeit-Haptikanalyse.",
+      "tactile-audio-accessibility": "Erkunde Timing und Rhythmus durch Berührung zusätzlich zum Audio. TactiBeat bietet Demos, sichtbare Haptikereignisse und einstellbare Presets, ohne die Wiederherstellung des Hörens oder eine medizinische Behandlung zu versprechen."
+    }
+  },
+  "fr-FR": {
+    "seoTitle": "TactiBeat : musique haptique et vibrations sur iPhone",
+    "summary": "Ressentez les temps forts et les basses sur iPhone : quatre démos intégrées, six préréglages haptiques, fichiers, micro et flux compatibles.",
+    "helpTitle": "Aide TactiBeat : démos, préréglages et sources audio",
+    "helpLead": "Commencez par une démo intégrée, choisissez la bonne source audio et ajustez les sensations sur un iPhone compatible.",
+    "supportLead": "Obtenez de l’aide pour les imports, les vibrations enregistrées, le son en direct, les flux compatibles et les réglages de TactiBeat.",
+    "stepsHeading": "Ressentir votre premier rythme",
+    "steps": ["Ouvrez l’une des quatre démos intégrées. Les fichiers audio sont inclus dans l’app, sans téléchargement supplémentaire à attendre.", "Lancez l’analyse de la démo, puis la lecture avec retour haptique. Vos fichiers audio ou vidéo locaux sont analysés automatiquement après leur préparation.", "Ouvrez les réglages depuis la page du fichier, du son en direct ou du flux. Comparez six préréglages et ajustez l’intensité, la sensibilité, la densité ou le décalage temporel.", "Les résultats enregistrés gardent leurs réglages d’origine. Pour modifier le ressenti, choisissez de régénérer, vérifiez et enregistrez les réglages, puis relancez l’analyse."],
+    "presetsHeading": "Six préréglages pour trouver votre ressenti",
+    "settingsBody": "Comparez les préréglages avec une même démo. « {feelCheck} » résume la force, le rythme et les attaques ; « {testHaptic} » vérifie la sortie de l’appareil. « {pocketMode} » simplifie le son en direct, sans promettre une écoute en arrière-plan ou écran verrouillé.",
+    "faqHeading": "Questions avant la lecture",
+    "faq": [
+      {"id": "demos", "q": "Puis-je essayer TactiBeat sans télécharger un morceau ?", "a": "Oui. Quatre démos audio CC0 sont incluses dans l’app. Ouvrez une démo, analysez-la puis lisez le rythme haptique sur un iPhone compatible. Aucun téléchargement audio supplémentaire n’est nécessaire."},
+      {"id": "sources", "q": "Quelles sources audio permettent le retour haptique ?", "a": "Analysez des fichiers audio ou vidéo locaux complets et relisez les résultats enregistrés hors ligne. Le son en direct utilise le micro avec votre autorisation. Des URL audio ou vidéo directes compatibles peuvent produire des vibrations pendant leur lecture en ligne. HLS permet seulement la lecture, sans analyse haptique en temps réel. Les flux protégés des services musicaux ne sont pas pris en charge."},
+      {"id": "device", "q": "Pourquoi entendre le son sans ressentir de vibrations ?", "a": "Le retour haptique nécessite un iPhone doté du matériel compatible. Vérifiez-le avec le test haptique. Pour le son en direct, autorisez le micro et rapprochez-vous de la source ou augmentez la sensibilité si le signal est faible. Une interface iPad n’implique pas un matériel de vibration équivalent. Le ressenti varie selon l’appareil, le contenu et les réglages."},
+      {"id": "other-apps", "q": "TactiBeat capte-t-il l’audio interne d’autres apps ?", "a": "Non. Le son en direct écoute les sons ambiants par le micro ; il ne capture pas l’audio interne du système. Pour lire du contenu dans TactiBeat, utilisez vos fichiers ou une URL multimédia directe compatible."},
+      {"id": "saved", "q": "De nouveaux réglages modifient-ils mes résultats enregistrés ?", "a": "Non. Chaque analyse enregistrée conserve ses réglages. Les pages de fichier, de son en direct et de flux donnent accès aux réglages par défaut. Pour modifier un résultat existant, choisissez de le régénérer puis vérifiez et enregistrez les réglages pour une nouvelle analyse."},
+      {"id": "limits", "q": "Les vibrations peuvent-elles reproduire une mélodie ou améliorer l’audition ?", "a": "Les vibrations du téléphone ne reproduisent fidèlement ni hauteur, ni paroles, ni timbre. TactiBeat se concentre sur le timing, les impulsions et le rythme. Ce n’est pas un dispositif médical et il ne remplace ni appareils auditifs, ni implants cochléaires, ni soins cliniques, ni conseils professionnels."}
+    ],
+    "routeLeads": {
+      "haptic-music-app": "Ressentez la musique comme un rythme tactile sur iPhone. Essayez quatre démos intégrées, analysez vos fichiers audio ou vidéo, comparez six préréglages et enregistrez les résultats.",
+      "music-vibration-app": "Transformez des temps forts nets et des variations de basses en vibrations distinctes sur iPhone. Comparez Basses profondes et Accent sur le rythme, puis ajustez intensité, sensibilité, densité et décalage temporel.",
+      "live-audio-haptics": "Utilisez le micro pour les sons ambiants ou une URL audio ou vidéo directe compatible pour les vibrations pendant la lecture. Ces entrées sont distinctes ; HLS permet la lecture seule, sans analyse haptique en temps réel.",
+      "tactile-audio-accessibility": "Explorez le timing et le rythme par le toucher, en complément de l’audio. TactiBeat propose des démos, des événements haptiques visibles et des préréglages, sans prétendre reproduire l’audition ni fournir un traitement médical."
+    }
+  },
+  "es-ES": {
+    "seoTitle": "TactiBeat: música háptica y vibraciones en el iPhone",
+    "summary": "Siente el ritmo y los graves en el iPhone: cuatro demos integradas, seis preajustes hápticos, archivos, micrófono y URL de streaming compatibles.",
+    "helpTitle": "Ayuda de TactiBeat: demos, preajustes y fuentes de audio",
+    "helpLead": "Empieza con una demo integrada, elige la fuente de audio y ajusta las sensaciones en un iPhone compatible.",
+    "supportLead": "Obtén ayuda con las importaciones, los resultados hápticos guardados, el sonido en vivo, las URL de streaming compatibles y los ajustes de TactiBeat.",
+    "stepsHeading": "Siente tu primer ritmo táctil",
+    "steps": ["Abre una de las cuatro demos integradas. El audio está incluido en la app; no tienes que esperar otra descarga.", "Analiza la demo y después reproduce el audio con respuesta háptica. Tus archivos de audio o vídeo locales se analizan automáticamente tras prepararse.", "Abre los ajustes desde la página del archivo, del sonido en vivo o del stream. Compara seis preajustes y ajusta intensidad, sensibilidad, densidad o desfase temporal.", "Los resultados guardados conservan sus ajustes originales. Para cambiar la sensación, elige regenerar, revisa y guarda los ajustes y vuelve a analizar."],
+    "presetsHeading": "Seis preajustes para encontrar tu sensación",
+    "settingsBody": "Compara los preajustes con la misma demo. «{feelCheck}» resume fuerza, ritmo y definición; «{testHaptic}» comprueba la salida del dispositivo. «{pocketMode}» simplifica el sonido en vivo, pero no promete escucha en segundo plano ni con la pantalla bloqueada.",
+    "faqHeading": "Preguntas antes de reproducir",
+    "faq": [
+      {"id": "demos", "q": "¿Puedo probar TactiBeat sin descargar una canción?", "a": "Sí. La app incluye cuatro demos de audio CC0. Abre una demo, analízala y reproduce el ritmo háptico generado en un iPhone compatible. No hace falta descargar el audio por separado."},
+      {"id": "sources", "q": "¿Qué fuentes de audio admiten respuesta háptica?", "a": "Analiza archivos completos de audio o vídeo locales y reproduce sin conexión los resultados guardados. El sonido en vivo utiliza el micrófono con tu permiso. Las URL directas de audio o vídeo compatibles pueden generar vibraciones durante la reproducción en línea. HLS solo permite reproducir, sin análisis háptico en tiempo real. No se admiten streams protegidos de servicios musicales."},
+      {"id": "device", "q": "¿Por qué oigo el audio pero no noto vibraciones?", "a": "La respuesta háptica requiere un iPhone con hardware compatible. Comprueba la salida con la prueba háptica. Para el sonido en vivo, permite el micrófono y acércate a la fuente o ajusta la sensibilidad si el nivel es bajo. Una interfaz para iPad no implica hardware de vibración equivalente. El efecto depende del dispositivo, del contenido y de los ajustes."},
+      {"id": "other-apps", "q": "¿TactiBeat captura el audio interno de otras apps?", "a": "No. El sonido en vivo escucha el entorno mediante el micrófono, no captura el audio interno del sistema. Para reproducir dentro de TactiBeat, utiliza tus archivos o una URL multimedia directa compatible."},
+      {"id": "saved", "q": "¿Los nuevos ajustes cambian mis resultados guardados?", "a": "No. Cada análisis guardado conserva sus ajustes. Puedes abrir los ajustes predeterminados desde las páginas de archivo, sonido en vivo y stream. Para modificar un resultado existente, elige regenerar y confirma y guarda los ajustes para un nuevo análisis."},
+      {"id": "limits", "q": "¿Pueden las vibraciones reproducir melodías o mejorar la audición?", "a": "La vibración del teléfono no conserva fielmente la altura tonal, la letra ni el timbre. TactiBeat se centra en tiempos, pulsos y ritmo. No es un dispositivo médico ni sustituye audífonos, implantes cocleares, atención clínica o asesoramiento profesional."}
+    ],
+    "routeLeads": {
+      "haptic-music-app": "Siente la música como ritmo táctil en el iPhone. Prueba cuatro demos integradas, analiza tu audio o vídeo, compara seis preajustes hápticos y guarda los resultados para repetirlos.",
+      "music-vibration-app": "Convierte los golpes claros y los cambios de graves en vibraciones separadas en el iPhone. Compara Graves profundos y Enfoque en el ritmo y ajusta intensidad, sensibilidad, densidad y desfase temporal.",
+      "live-audio-haptics": "Usa el micrófono para los sonidos cercanos o una URL directa de audio o vídeo compatible para generar vibraciones al reproducir. Son entradas distintas; HLS solo reproduce, sin análisis háptico en tiempo real.",
+      "tactile-audio-accessibility": "Explora tiempos y ritmo mediante el tacto junto al audio. TactiBeat ofrece demos, eventos hápticos visibles y preajustes, sin afirmar que reproduce la audición ni ofrece tratamientos médicos."
+    }
+  }
+}

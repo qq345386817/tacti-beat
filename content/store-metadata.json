@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "app_id": "6769032242",
+  "bundle_id": "com.luopeike.HapticMusic",
+  "source": "Local App metadata and localization catalog; not proof of App Store publication",
+  "source_sha256": {
+    "HapticMusic/Localizable.xcstrings": "77269870594344709503d3f7a354511b58f244d4282907353e91ac47c8a6ced7",
+    "fastlane/metadata_ios/en-US/name.txt": "41aab35c93ccf4330aa09efe6c07b697c0babdda36da41b93118aa694daf3d66",
+    "fastlane/metadata_ios/en-US/subtitle.txt": "ff8553adf77874d2dbb729996919cd0ef5b014fce2b6c7372e4b8ae985b19107",
+    "fastlane/metadata_ios/en-US/description.txt": "03ad39d3b06cfa8f3b21884bd4ecfb4091f666e47b3ba57dd32679528a441a45",
+    "fastlane/metadata_ios/en-US/promotional_text.txt": "9cc715f8edecc7744979578319adf3a7447cd2de9b0b9b359e045c6dd4e8c4fd",
+    "fastlane/metadata_ios/zh-Hans/name.txt": "73e5cd4a708dd65d99702f5698a21326ec3fba0aad198b950be26cd0824b7a4a",
+    "fastlane/metadata_ios/zh-Hans/subtitle.txt": "87f8f80b3f246b58ca593c9be2b455102cf5a13eb43a5fa7905e84ad96586924",
+    "fastlane/metadata_ios/zh-Hans/description.txt": "7d9c7cfc398a311304eb4b1810c42bb2e38c7979b2916a63eeb24f8c9be83286",
+    "fastlane/metadata_ios/zh-Hans/promotional_text.txt": "36e7084946402f551387a973374c94cea5327928eee706d9f37aee98f9574d32",
+    "fastlane/metadata_ios/zh-Hant/name.txt": "f3a089a0bf9bd79e87ea193980160e3a6b1c5d6beb93798ef27e89cf5a3dc654",
+    "fastlane/metadata_ios/zh-Hant/subtitle.txt": "f8d81835030fa2cfd6414d09b85d2ffa93fe1b1fde6929c1ef9e5bf7df9b7a30",
+    "fastlane/metadata_ios/zh-Hant/description.txt": "5ecb23f5494397909aaf7e4ef106f1e0c486a19bf634e3d0fbf9e55c314dfc51",
+    "fastlane/metadata_ios/zh-Hant/promotional_text.txt": "8295696bd31889df0edd928e4cf22a90c99dcee681306b625c89394ade528ed8",
+    "fastlane/metadata_ios/ja/name.txt": "f4d4064365f97098169dea5ebd37d0a7aaf31a24de741e75e01196123acfaf91",
+    "fastlane/metadata_ios/ja/subtitle.txt": "608a50d50a29ab0635bc4d1e304fa95df2c757af58ed0c3c55cc619250494c66",
+    "fastlane/metadata_ios/ja/description.txt": "894dbb9230df1c9fccc036b0a51e8dc14027abdf1ca669897de46b1c9be0bdc1",
+    "fastlane/metadata_ios/ja/promotional_text.txt": "2abd427a7a431f4568901a6d2eaf53dc9b843224516977d6235abc482192eb33",
+    "fastlane/metadata_ios/ko/name.txt": "ce1878e21896a17c4de3a1e2e51e34bf14e4602561f760794fb12136f7f59fa7",
+    "fastlane/metadata_ios/ko/subtitle.txt": "31c3adf5c61a74022cf8c3a35f2477d61b614a2fdf14f13548377c211d99e114",
+    "fastlane/metadata_ios/ko/description.txt": "fbdb512dbfdfab1d3ffec718541a676ddf2f7f0b5c3eded03dc5f82624bfc38e",
+    "fastlane/metadata_ios/ko/promotional_text.txt": "6a9d278988eb35e0e22d424df3e11f54f7a256b926a62d65730ac78c45db8997",
+    "fastlane/metadata_ios/de-DE/name.txt": "8957f0b7c078faffabe03bffb61f23c512b0dfa9ecc0191ea6f8d2b256f6e242",
+    "fastlane/metadata_ios/de-DE/subtitle.txt": "ed437dce76f90991d91ee267ed9e692f9c00c8eed7148c96c0706e094593b1df",
+    "fastlane/metadata_ios/de-DE/description.txt": "0198d9d889877acc81e6783156865b88d1998872f80a6bc2e4dd20589d0af20f",
+    "fastlane/metadata_ios/de-DE/promotional_text.txt": "93c813b6a186676ef80ed82b8e09864bc7ebb566ceb7e739fc65343004c75c00",
+    "fastlane/metadata_ios/fr-FR/name.txt": "2219eb5bfa9d0837a8fb582fe47813df5825c6ef751174739c000743ca6daf9d",
+    "fastlane/metadata_ios/fr-FR/subtitle.txt": "8a16f8d1db821b28336dfdaed4043fd8b8e9382983d5015d065620b654933ad5",
+    "fastlane/metadata_ios/fr-FR/description.txt": "62d09f3e6786132f8153e7481cd4e62804bd18e30736c6950e82ea6987d22416",
+    "fastlane/metadata_ios/fr-FR/promotional_text.txt": "81068fcaacd8a79afe95cfff2dfca7f3cdc96fd453212068e97ac2ac35fab4fc",
+    "fastlane/metadata_ios/es-ES/name.txt": "6f85199421c104bbc26c0b99804c0873a413d5c4c77f66c324bcedbaf247efc9",
+    "fastlane/metadata_ios/es-ES/subtitle.txt": "b2cdc64005760ba624d25ce2ac3dbd0eaf27447569acbf58c42e1415b28eabf3",
+    "fastlane/metadata_ios/es-ES/description.txt": "6a5f046daf3d5b2459f6d906682b47d992fc3cc29e5589b32ed104aa2ac0f1fe",
+    "fastlane/metadata_ios/es-ES/promotional_text.txt": "4b7558948356ce5f9f596538e674061f81d6f3d34b4bb03eb17e160bf6ed7ec6"
+  },
+  "locales": {
+    "en-US": {
+      "name": "TactiBeat: Haptic Music",
+      "subtitle": "Feel Beats, Bass & Live Audio",
+      "description": "Feel beats and bass as vibrations on your iPhone. With TactiBeat, you can analyze your own audio and video files, save the haptic results, and play them again. Try the built-in demos without downloading anything, or use the microphone and compatible stream URLs for real-time haptics.\n\nFind your feel\nStart with a built-in demo, then try Balanced Mix, Deep Bass or Beat Focus. Six presets let you explore bass, rhythm, detail, texture, voice and melody. Feel Check summarizes strength, rhythm and edge to help you tune playback. Use Pocket Mode for a simpler Live Sound view.\n\nChoose your source\nAnalyze complete local audio or video files and replay saved haptic results offline. Live Sound uses the microphone with your permission; compatible remote media URLs need a network connection. TactiBeat does not capture audio playing inside other apps.\n\nHaptic output requires an iPhone with supported haptic hardware. Use Test Haptic to check your device. The feel varies with the device, source and settings.\n\nWhat you can do:\n• Import local audio or video files for on-device analysis\n• Download direct remote media URLs and save generated haptic results\n• Feel nearby live sound through microphone-driven real-time haptics\n• Feel bass and rhythm from compatible direct audio and video URLs as they play\n• Tune intensity, sensitivity, density, timing offset, haptic style, Beat Focus, Deep Bass, and other mapping presets\n• Inspect energy, onset, intensity, sharpness, cue timing, and pulse spacing\n\nTactiBeat works best with material that has obvious rhythm, percussion, downbeats, pauses, and strong energy changes. It avoids turning every loud section into one continuous buzz; the app favors distinct tactile hits with readable space between them.\n\nLive stream haptics require a compatible source that exposes decoded audio to the app. HLS URLs support playback only, without live haptic analysis. Protected music-service streams are not supported.\n\nVibration cannot faithfully preserve pitch, lyrics, or timbre, so TactiBeat focuses on timing, physical pulse, and rhythmic feel.\n\nTactiBeat is not a medical device and does not replace hearing aids, cochlear implants, clinical care, or professional advice.",
+      "promotional_text": "Try a built-in demo, feel the beat, then tune the touch. Explore six haptic presets, local file analysis and live microphone sound on a compatible iPhone.",
+      "presets": [
+        "Balanced Mix",
+        "Deep Bass",
+        "Beat Focus",
+        "Crisp Detail",
+        "Texture Feel",
+        "Voice & Melody"
+      ],
+      "labels": {
+        "feelCheck": "Feel Check",
+        "testHaptic": "Test Haptic",
+        "pocketMode": "Pocket Mode"
+      }
+    },
+    "zh-Hans": {
+      "name": "TactiBeat: 触觉音乐",
+      "subtitle": "把节拍与低音变成震动，支持视频和实时声音",
+      "description": "让 iPhone 跟着节拍和低音震动。TactiBeat 可以分析你自己的音频和视频文件，保存触觉结果并反复播放。打开内置演示即可体验，无需等待下载；也可以通过麦克风和兼容的流媒体直链，实时感受声音的节奏。\n\n找到适合你的触感\n从内置演示开始，试试均衡混合、深沉低频或节拍突出。六种预设覆盖低频、节奏、细节、纹理、人声与旋律。触感检查用强度、节奏和锐度帮助你了解播放效果；口袋模式提供更简洁的实时声音界面。\n\n选对声音来源\n完整的本地音频或视频可在设备上分析，已保存的触觉结果可离线重播。实时声音通过经你授权的麦克风输入；远程媒体链接需要联网。TactiBeat 不会直接捕获其他 App 内部播放的音频。\n\n触觉输出需要支持触觉硬件的 iPhone。可先使用触觉测试检查设备；实际震感会随设备、素材和设置而变化。\n\n你可以：\n• 导入本地音频或视频文件，并在设备上分析\n• 下载远程媒体 URL，并保存生成的震动结果\n• 通过麦克风感受环境实时声音的实时触觉\n• 在播放兼容的音频、视频直链时，实时感受低频与节奏触觉\n• 调节强度、灵敏度、密度、时间偏移、震动风格、节拍突出、深沉低频等映射预设\n• 查看能量、瞬态、强度、锐度、事件时序和脉冲间隔等细节\n\nTactiBeat 更适合节奏、打击乐、重拍、停顿和能量变化明显的素材。它会避免把整段响亮音频变成连续嗡振，从而生成有间隔、能读出节奏的一下下触觉击打。\n\n流媒体实时触觉需要兼容的来源，并且播放器能向 App 提供解码后的音频。HLS 链接仅支持播放，不支持实时触觉分析。不支持受保护的音乐服务流。\n\n震动无法准确保留音高、歌词或音色，因此 TactiBeat 聚焦在触觉最容易传递的信息：时序、身体脉冲和节奏感。\n\nTactiBeat 不是医疗设备，不能替代助听器、人工耳蜗、临床护理或专业建议。",
+      "promotional_text": "先用内置演示感受节拍，再调出适合自己的触感。探索六种触觉预设、本地音视频分析和麦克风实时声音；震感需要支持触觉的 iPhone。",
+      "presets": [
+        "均衡混合",
+        "深沉低频",
+        "节拍突出",
+        "清晰细节",
+        "纹理触感",
+        "人声与旋律"
+      ],
+      "labels": {
+        "feelCheck": "触感检查",
+        "testHaptic": "测试触觉",
+        "pocketMode": "口袋模式"
+      }
+    },
+    "zh-Hant": {
+      "name": "TactiBeat: 觸覺音樂",
+      "subtitle": "用震動感受節拍與低音，支援影片和即時聲音",
+      "description": "讓 iPhone 跟著節拍和低音震動。TactiBeat 可以分析你自己的音訊和影片檔案，儲存觸覺結果並重複播放。開啟內建示範即可體驗，不必等待下載；也可以透過麥克風和相容的串流直接連結，即時感受聲音的節奏。\n\n找到適合你的觸感\n從內建示範開始，試試均衡混合、深沉低頻或節拍突出。六種預設涵蓋低頻、節奏、細節、紋理、人聲與旋律。觸感檢查以強度、節奏和銳度協助你了解播放效果；口袋模式提供更簡潔的即時聲音介面。\n\n選對聲音來源\n完整的本機音訊或影片可在裝置上分析，已儲存的觸覺結果可離線重播。即時聲音透過經你授權的麥克風輸入；遠端媒體連結需要連線。TactiBeat 不會直接擷取其他 App 內部播放的音訊。\n\n觸覺輸出需要支援觸覺硬體的 iPhone。可先使用觸覺測試檢查裝置；實際震感會隨裝置、素材和設定而變化。\n\n你可以：\n• 匯入本機音訊或影片檔案，並在裝置上分析\n• 下載遠端媒體 URL，並儲存產生的震動結果\n• 透過麥克風感受環境即時聲音的即時觸覺\n• 播放相容的音訊、影片直接連結時，即時感受低頻與節奏觸覺\n• 調整強度、靈敏度、密度、時間偏移、震動風格、節拍突出、深沉低頻等映射預設\n• 查看能量、瞬態、強度、銳度、事件時序和脈衝間隔等細節\n\nTactiBeat 更適合節奏、打擊樂、重拍、停頓和能量變化明顯的素材。它會避免把整段響亮音訊變成連續嗡振，而是優先產生有間隔、能讀出節奏的一下下觸覺擊打。\n\n串流即時觸覺需要相容的來源，且播放器能向 App 提供解碼後的音訊。HLS 連結僅支援播放，不支援即時觸覺分析。不支援受保護的音樂服務串流。\n\n震動無法準確保留音高、歌詞或音色，因此 TactiBeat 聚焦在觸覺最容易傳遞的資訊：時序、身體脈衝和節奏感。\n\nTactiBeat 不是醫療裝置，不能取代助聽器、人工電子耳、臨床照護或專業建議。",
+      "promotional_text": "先用內建示範感受節拍，再調出適合自己的觸感。探索六種觸覺預設、本機音訊與影片分析及麥克風即時聲音；震感需要支援觸覺的 iPhone。",
+      "presets": [
+        "均衡混合",
+        "深沉低頻",
+        "節拍突出",
+        "清晰細節",
+        "紋理觸感",
+        "人聲與旋律"
+      ],
+      "labels": {
+        "feelCheck": "觸感檢查",
+        "testHaptic": "測試觸覺",
+        "pocketMode": "口袋模式"
+      }
+    },
+    "ja": {
+      "name": "TactiBeat: 触覚音楽",
+      "subtitle": "ビートと低音を振動に。動画・マイクにも対応",
+      "description": "ビートと低音を、iPhoneの振動で感じよう。TactiBeatは、自分の音声や動画ファイルを解析し、触覚の結果を保存して繰り返し再生できます。内蔵デモはダウンロード不要。マイクや対応するストリームURLから、リアルタイムに音のリズムを感じることもできます。\n\n自分に合う触感を見つけよう\n内蔵デモから始めて、バランス、低音重視、ビート重視を試しましょう。6種類のプリセットで低音、リズム、細部、質感、声やメロディを調整できます。触感チェックでは強さ、リズム、鋭さを確認でき、ポケットモードではライブ音声の画面をシンプルに表示できます。\n\n音源を選ぶ\n完全なローカル音声・動画ファイルを端末上で解析し、保存した触覚結果をオフラインで再生できます。ライブ音声には許可したマイクを使い、リモートメディアURLには通信が必要です。他のアプリ内部で再生中の音声を直接取り込む機能ではありません。\n\n触覚出力には対応ハードウェアを備えたiPhoneが必要です。触覚テストで端末を確認してください。実際の感触は端末、素材、設定によって異なります。\n\nできること:\n• ローカルの音声/動画ファイルを端末上で解析\n• リモートメディアURLをダウンロードし、生成した触覚結果を保存\n• マイクを通じて周囲のリアルタイム音声を触覚で感じる\n• 対応する音声・動画の直接URLを再生しながら、低音とリズムを触覚で感じる\n• 強度、感度、密度、タイミングオフセット、触覚スタイル、ビート重視、ディープベースなどのマッピングを調整\n• エネルギー、オンセット、強度、シャープネス、キュータイミング、パルス間隔を確認\n\nTactiBeatは、明確なリズム、打楽器、強拍、休符、強いエネルギー変化を含む素材に最適です。大きな音をすべて連続的な振動にするのではなく、読み取りやすい間隔を持つ個別の触覚ヒットを優先します。\n\nストリームのリアルタイム触覚には、アプリがデコード後の音声を取得できる対応ソースが必要です。HLS URLは再生のみに対応し、リアルタイム触覚解析には対応していません。保護された音楽サービスのストリームには対応していません。\n\n振動は音高、歌詞、音色を忠実には保てないため、TactiBeatはタイミング、身体的なパルス、リズム感に集中します。\n\nTactiBeatは医療機器ではなく、補聴器、人工内耳、臨床ケア、専門家の助言の代替にはなりません。",
+      "promotional_text": "内蔵デモでビートを感じて、自分好みの触感へ。6種類の触覚プリセット、ローカルファイル解析、マイクのリアルタイム音声を体験。触覚対応のiPhoneが必要です。",
+      "presets": [
+        "バランスミックス",
+        "ディープベース",
+        "ビート重視",
+        "クリアなディテール",
+        "質感タッチ",
+        "声とメロディ"
+      ],
+      "labels": {
+        "feelCheck": "触感チェック",
+        "testHaptic": "触覚をテスト",
+        "pocketMode": "ポケットモード"
+      }
+    },
+    "ko": {
+      "name": "TactiBeat: 햅틱 음악",
+      "subtitle": "비트와 저음을 진동으로, 동영상·마이크 지원",
+      "description": "iPhone의 진동으로 비트와 저음을 느껴 보세요. TactiBeat으로 나만의 오디오와 동영상 파일을 분석하고, 햅틱 결과를 저장해 다시 재생할 수 있습니다. 다운로드 없이 내장 데모를 체험하거나, 마이크와 호환되는 스트리밍 URL로 소리의 리듬을 실시간으로 느낄 수 있습니다.\n\n나에게 맞는 촉감 찾기\n내장 데모로 시작해 균형 잡힌 믹스, 깊은 저음, 비트 강조를 비교해 보세요. 6가지 프리셋으로 저음, 리듬, 디테일, 질감, 목소리와 멜로디를 조절할 수 있습니다. 촉감 확인에서 강도, 리듬, 날카로움을 살펴보고, 포켓 모드로 실시간 소리 화면을 간결하게 사용할 수 있습니다.\n\n소리의 출처 선택\n완전한 로컬 오디오·동영상 파일을 기기에서 분석하고 저장한 햅틱 결과를 오프라인으로 다시 재생하세요. 실시간 소리는 허용한 마이크를 사용하며 원격 미디어 URL에는 네트워크 연결이 필요합니다. 다른 앱 내부에서 재생되는 오디오를 직접 캡처하지 않습니다.\n\n햅틱 출력에는 지원 하드웨어가 있는 iPhone이 필요합니다. 햅틱 테스트로 기기를 확인하세요. 실제 촉감은 기기, 소스, 설정에 따라 달라집니다.\n\n할 수 있는 일:\n• 로컬 오디오 또는 비디오 파일을 기기에서 분석\n• 원격 미디어 URL을 다운로드하고 생성된 햅틱 결과 저장\n• 마이크로 주변 실시간 소리를 실시간 햅틱으로 느끼기\n• 호환되는 오디오 및 비디오 직접 URL을 재생하면서 저음과 리듬을 촉각으로 느끼기\n• 강도, 민감도, 밀도, 타이밍 오프셋, 햅틱 스타일, 비트 집중, 깊은 베이스 등 매핑 프리셋 조정\n• 에너지, 온셋, 강도, 선명도, 큐 타이밍, 펄스 간격 확인\n\nTactiBeat은 분명한 리듬, 퍼커션, 다운비트, 쉼, 강한 에너지 변화가 있는 자료에서 가장 잘 작동합니다. 모든 큰 소리 구간을 연속 진동으로 바꾸지 않고, 읽기 쉬운 간격을 둔 뚜렷한 촉각 히트를 우선합니다.\n\n스트림의 실시간 햅틱에는 앱이 디코딩된 오디오에 접근할 수 있는 호환 소스가 필요합니다. HLS URL은 재생만 지원하며 실시간 햅틱 분석은 지원하지 않습니다. 보호된 음악 서비스 스트림은 지원하지 않습니다.\n\n진동은 음높이, 가사, 음색을 충실히 보존할 수 없으므로 TactiBeat은 타이밍, 물리적 펄스, 리듬감에 집중합니다.\n\nTactiBeat은 의료기기가 아니며 보청기, 인공와우, 임상 진료 또는 전문가 조언을 대체하지 않습니다.",
+      "promotional_text": "내장 데모로 비트를 느끼고 나에게 맞는 촉감을 찾아보세요. 6가지 햅틱 프리셋, 로컬 파일 분석, 마이크 실시간 소리를 지원합니다. 햅틱 지원 iPhone이 필요합니다.",
+      "presets": [
+        "균형 믹스",
+        "깊은 베이스",
+        "비트 집중",
+        "선명한 디테일",
+        "질감 느낌",
+        "음성 및 멜로디"
+      ],
+      "labels": {
+        "feelCheck": "느낌 확인",
+        "testHaptic": "햅틱 테스트",
+        "pocketMode": "포켓 모드"
+      }
+    },
+    "de-DE": {
+      "name": "TactiBeat: Haptik-Musik",
+      "subtitle": "Beats, Bass und Live-Audio",
+      "description": "Spüre Beats und Bass als Vibrationen auf deinem iPhone. Mit TactiBeat kannst du eigene Audio- und Videodateien analysieren, die Haptik-Ergebnisse speichern und erneut abspielen. Probiere die integrierten Demos ohne Download aus oder nutze das Mikrofon und kompatible Stream-URLs für Haptik in Echtzeit.\n\nFinde dein Tastgefühl\nBeginne mit einer integrierten Demo und vergleiche Balanced Mix, Deep Bass und Beat Focus. Sechs Presets decken Bass, Rhythmus, Details, Textur, Stimme und Melodie ab. Feel Check zeigt Stärke, Rhythmus und Schärfe; der Taschenmodus vereinfacht die Live-Sound-Ansicht.\n\nWähle deine Quelle\nAnalysiere vollständige lokale Audio- oder Videodateien auf dem Gerät und spiele gespeicherte Haptik-Ergebnisse offline ab. Live Sound nutzt das Mikrofon mit deiner Erlaubnis; entfernte Medien-URLs benötigen eine Netzwerkverbindung. TactiBeat erfasst keine Audioausgabe innerhalb anderer Apps.\n\nDie Haptik-Ausgabe erfordert ein iPhone mit unterstützter Haptik-Hardware. Prüfe dein Gerät mit dem Haptik-Test. Das Tastgefühl hängt von Gerät, Material und Einstellungen ab.\n\nDas ist möglich:\n• Lokale Audio- oder Videodateien auf dem Gerät analysieren\n• Entfernte Medien-URLs laden und erzeugte Haptik-Ergebnisse speichern\n• Umgebungsgeräusche per Mikrofon als Echtzeit-Haptik fühlen\n• Bass und Rhythmus kompatibler direkter Audio- und Video-URLs während der Wiedergabe fühlen\n• Intensität, Empfindlichkeit, Dichte, Zeitversatz, Haptikstil, Beat-Fokus, Tiefer Bass und weitere Voreinstellungen anpassen\n• Energie, Einsatz, Intensität, Schärfe, Signalzeitpunkte und Pulsabstände prüfen\n\nTactiBeat funktioniert am besten mit Material, das deutlichen Rhythmus, Percussion, Downbeats, Pausen und starke Energieänderungen enthält. Die App vermeidet, jeden lauten Abschnitt in ein kontinuierliches Summen zu verwandeln, und bevorzugt klare taktile Treffer mit lesbarem Abstand dazwischen.\n\nEchtzeit-Haptik für Streams erfordert eine kompatible Quelle, deren dekodierte Audiodaten der App zur Verfügung stehen. HLS-URLs unterstützen nur die Wiedergabe, ohne Echtzeit-Haptikanalyse. Geschützte Musikdienst-Streams werden nicht unterstützt.\n\nVibration kann Tonhöhe, Liedtexte oder Klangfarbe nicht zuverlässig bewahren. Deshalb konzentriert sich TactiBeat auf Synchronisation, körperliche Pulse und rhythmisches Gefühl.\n\nTactiBeat ist kein Medizinprodukt und ersetzt keine Hörgeräte, Cochlea-Implantate, klinische Behandlung oder professionelle Beratung.",
+      "promotional_text": "Starte eine integrierte Demo und finde dein Tastgefühl: sechs Haptik-Presets, lokale Dateianalyse und Live-Klang per Mikrofon. Haptik erfordert ein kompatibles iPhone.",
+      "presets": [
+        "Ausgewogener Mix",
+        "Tiefer Bass",
+        "Beat-Fokus",
+        "Klare Details",
+        "Texturgefühl",
+        "Stimme & Melodie"
+      ],
+      "labels": {
+        "feelCheck": "Gefühlscheck",
+        "testHaptic": "Haptik testen",
+        "pocketMode": "Taschenmodus"
+      }
+    },
+    "fr-FR": {
+      "name": "TactiBeat: Musique haptique",
+      "subtitle": "Vibrez au rythme des basses",
+      "description": "Ressentez les rythmes et les basses sous forme de vibrations sur votre iPhone. Avec TactiBeat, analysez vos propres fichiers audio et vidéo, enregistrez les résultats haptiques et rejouez-les. Essayez les démos intégrées sans téléchargement, ou utilisez le micro et des URL de flux compatibles pour un retour haptique en temps réel.\n\nTrouvez votre ressenti\nCommencez par une démo intégrée, puis comparez les préréglages équilibré, basses profondes et rythme. Six préréglages couvrent les basses, le rythme, les détails, la texture, la voix et la mélodie. Le bilan tactile indique la force, le rythme et la netteté ; le mode poche simplifie la vue du son en direct.\n\nChoisissez votre source\nAnalysez sur l’appareil des fichiers audio ou vidéo locaux complets, puis relisez hors ligne les résultats haptiques enregistrés. Le son en direct utilise le micro avec votre autorisation ; les URL de médias distants nécessitent une connexion. TactiBeat ne capture pas le son joué à l’intérieur d’autres apps.\n\nLa sortie haptique nécessite un iPhone doté du matériel compatible. Vérifiez votre appareil avec le test haptique. Le ressenti varie selon l’appareil, le contenu et les réglages.\n\nCe que vous pouvez faire :\n• Analyser des fichiers audio ou vidéo locaux sur l’appareil\n• Télécharger des URL média distantes et enregistrer les résultats haptiques générés\n• Ressentir les sons ambiants en temps réel avec des haptiques pilotées par le micro\n• Ressentir les basses et le rythme pendant la lecture d’URL directes audio et vidéo compatibles\n• Régler intensité, sensibilité, densité, décalage temporel, style haptique, accent sur le beat, basses profondes et d’autres préréglages\n• Examiner énergie, attaque, intensité, netteté, synchronisation des repères et espacements des impulsions\n\nTactiBeat fonctionne mieux avec des contenus présentant un rythme évident, des percussions, des temps forts, des pauses et de fortes variations d’énergie. L’app évite de transformer chaque passage fort en bourdonnement continu et privilégie des impacts tactiles distincts, avec un espace lisible entre eux.\n\nLe retour haptique en temps réel nécessite une source compatible permettant à l’app d’accéder à l’audio décodé. Les URL HLS permettent uniquement la lecture, sans analyse haptique en temps réel. Les flux protégés des services musicaux ne sont pas pris en charge.\n\nLa vibration ne peut pas préserver fidèlement la hauteur, les paroles ou le timbre. TactiBeat se concentre donc sur la synchronisation, l’impulsion physique et la sensation rythmique.\n\nTactiBeat n’est pas un dispositif médical et ne remplace pas les aides auditives, les implants cochléaires, les soins cliniques ni les conseils d’un professionnel.",
+      "promotional_text": "Essayez une démo intégrée, puis ajustez le ressenti : six préréglages haptiques, analyse de fichiers locaux et son au micro. iPhone compatible requis pour les vibrations.",
+      "presets": [
+        "Mix équilibré",
+        "Basses profondes",
+        "Accent sur le rythme",
+        "Détails nets",
+        "Sensation de texture",
+        "Voix et mélodie"
+      ],
+      "labels": {
+        "feelCheck": "Contrôle de sensation",
+        "testHaptic": "Tester l’haptique",
+        "pocketMode": "Mode poche"
+      }
+    },
+    "es-ES": {
+      "name": "TactiBeat: Música háptica",
+      "subtitle": "Siente los graves y el ritmo",
+      "description": "Siente el ritmo y los graves como vibraciones en tu iPhone. Con TactiBeat puedes analizar tus propios archivos de audio y vídeo, guardar los resultados hápticos y volver a reproducirlos. Prueba las demos integradas sin descargas, o usa el micrófono y URLs de streaming compatibles para sentir el sonido en tiempo real.\n\nEncuentra tu sensación\nEmpieza con una demo integrada y compara los preajustes equilibrado, graves profundos y ritmo. Seis preajustes cubren graves, ritmo, detalles, textura, voz y melodía. La comprobación táctil resume intensidad, ritmo y nitidez; el modo bolsillo simplifica la vista de sonido en vivo.\n\nElige tu fuente\nAnaliza archivos de audio o vídeo locales completos en el dispositivo y reproduce sin conexión los resultados hápticos guardados. El sonido en vivo usa el micrófono con tu permiso; las URL de medios remotos requieren conexión. TactiBeat no captura directamente el audio que se reproduce dentro de otras apps.\n\nLa salida háptica requiere un iPhone con hardware compatible. Comprueba tu dispositivo con la prueba háptica. La sensación depende del dispositivo, el contenido y los ajustes.\n\nQué puedes hacer:\n• Analizar archivos locales de audio o vídeo en el dispositivo\n• Descargar URLs de medios remotos y guardar los resultados hápticos generados\n• Sentir sonido ambiental en tiempo real con hápticos impulsados por el micrófono\n• Sentir los graves y el ritmo al reproducir URLs directas de audio y vídeo compatibles\n• Ajustar intensidad, sensibilidad, densidad, desfase temporal, estilo háptico, enfoque en el ritmo, graves profundos y otros preajustes\n• Consultar energía, ataques, intensidad, nitidez, tiempos de las señales y espacios entre pulsos\n\nTactiBeat funciona mejor con material que tiene ritmo evidente, percusión, acentos, pausas y cambios fuertes de energía. Evita convertir cada sección fuerte en un zumbido continuo y prioriza golpes táctiles definidos con espacio legible entre ellos.\n\nLa respuesta háptica en tiempo real requiere una fuente compatible que permita a la app acceder al audio decodificado. Las URLs HLS solo permiten reproducción, sin análisis háptico en tiempo real. No se admiten flujos protegidos de servicios musicales.\n\nLa vibración no puede conservar fielmente la altura, la letra ni el timbre, así que TactiBeat se centra en la sincronización, el pulso físico y la sensación rítmica.\n\nTactiBeat no es un dispositivo médico y no sustituye a audífonos, implantes cocleares, atención clínica ni asesoramiento profesional.",
+      "promotional_text": "Prueba una demo y ajusta la sensación: seis preajustes hápticos, análisis de archivos locales y sonido por micrófono. La vibración requiere un iPhone compatible.",
+      "presets": [
+        "Mezcla equilibrada",
+        "Graves profundos",
+        "Enfoque en el ritmo",
+        "Detalle nítido",
+        "Sensación de textura",
+        "Voz y melodía"
+      ],
+      "labels": {
+        "feelCheck": "Prueba de sensación",
+        "testHaptic": "Probar háptica",
+        "pocketMode": "Modo bolsillo"
+      }
+    }
+  }
+}

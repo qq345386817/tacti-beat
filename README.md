@@ -83,11 +83,11 @@ No API tokens, environment files, build caches, design-editor blobs or browser-t
 verification file, not a Cloudflare or Microsoft account API credential. Keep it
 deployed at the site root; do not add it to the sitemap or robots disallow rules.
 
-The IndexNow GitHub Actions workflow checks the site, waits for the production
-key and exact sitemap to match the pushed checkout, then submits its 64 canonical
-URLs. It requires no repository secrets. Failed checks or submissions fail the
-workflow visibly; they never report a successful notification. Cloudflare Pages
-continues to publish from the same Git branch independently.
+Cloudflare Pages publishes directly from the linked GitHub repository. No GitHub
+Actions deployment or notification workflow is required. After a content update,
+the manual IndexNow script waits for the production key and exact sitemap to match
+the checkout, then submits its 64 canonical URLs. It requires no account API token.
+Failed checks or submissions exit with an error instead of reporting success.
 
 For a local dry run, offline tests, or a manual post-deploy notification:
 

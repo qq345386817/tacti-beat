@@ -1,0 +1,32 @@
+name: Notify IndexNow After Publication
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/*.html'
+      - 'sitemap.xml'
+      - '2906b52713614eb9ac118b81f4e65b42.txt'
+      - 'scripts/submit_indexnow.py'
+      - '.github/workflows/indexnow.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow-production
+  cancel-in-progress: true
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the site and submission safeguards
+        run: |
+          python3 scripts/check_site.py
+          python3 -m unittest discover -s scripts -p 'test_*.py'
+      - name: Wait for Cloudflare production and notify search engines
+        run: python3 scripts/submit_indexnow.py --submit --wait-seconds 900

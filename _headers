@@ -4,6 +4,10 @@
   X-Robots-Tag: noindex
 /README.md
   X-Robots-Tag: noindex
+/.github/*
+  X-Robots-Tag: noindex
+/2906b52713614eb9ac118b81f4e65b42.txt
+  X-Robots-Tag: noindex
 /assets/screens/*
   Cache-Control: public, max-age=86400
 /assets/illustrations/*

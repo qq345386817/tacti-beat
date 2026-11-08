@@ -38,6 +38,11 @@ is used consistently for page `dateModified` and sitemap `lastmod`. Do not stamp
 every build with the current time. The checks cover all 64 canonical pages and
 require FAQ schema answers to match the visible localized answers exactly.
 
+Search-only descriptions can be supplied in `content/product.json` via
+`seoDescriptions` (the empty route is the homepage). These update the meta,
+social and WebPage descriptions without lengthening the visible hero summary.
+Use natural localized text rather than padding CJK copy to an English character target.
+
 ## Search And AI Retrieval
 
 The site presents four bundled demos, six presets, separate file/microphone/direct
@@ -71,3 +76,30 @@ The App palette comes from `HapticMusic/BrandPalette.swift` in the parent App pr
 Commit and push `main` after checks pass. Confirm the matching Git commit reaches a successful **production** deployment in Cloudflare Pages, then check the custom domain, not only `pages.dev`. Keep all 64 canonical URLs and their reciprocal hreflang links. Update sitemap `lastmod` when page content changes; use the content change date, not an arbitrary fetch date.
 
 No API tokens, environment files, build caches, design-editor blobs or browser-test artifacts belong in this repository.
+
+## Bing And IndexNow
+
+`2906b52713614eb9ac118b81f4e65b42.txt` is the public, domain-scoped IndexNow
+verification file, not a Cloudflare or Microsoft account API credential. Keep it
+deployed at the site root; do not add it to the sitemap or robots disallow rules.
+
+The IndexNow GitHub Actions workflow checks the site, waits for the production
+key and exact sitemap to match the pushed checkout, then submits its 64 canonical
+URLs. It requires no repository secrets. Failed checks or submissions fail the
+workflow visibly; they never report a successful notification. Cloudflare Pages
+continues to publish from the same Git branch independently.
+
+For a local dry run, offline tests, or a manual post-deploy notification:
+
+```sh
+python3 scripts/submit_indexnow.py
+python3 -m unittest discover -s scripts -p 'test_*.py'
+python3 scripts/submit_indexnow.py --submit --wait-seconds 900
+```
+
+HTTP 200 means received; HTTP 202 means received with key verification pending.
+Neither guarantees indexing, rankings or immediate removal of cached Bing warnings.
+Check the live URL inspection separately. Decorative icons retain empty alt with
+`aria-hidden`, while the standalone download-area App icon has an informative alt.
+The high-quality inbound-link recommendation needs genuine third-party mentions;
+do not manufacture links or add hidden keyword content to silence it.

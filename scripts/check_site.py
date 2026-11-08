@@ -90,6 +90,13 @@ def main():
         assert page.h1 == page.main == 1, (path, 'one h1 and one main required')
         assert page.canonical == url, (path, page.canonical)
         assert page.lang and page.description and page.structured_data, path
+        assert 30 <= len(page.description) <= 260, (path, 'missing or unhelpfully short/long description')
+        overrides = PRODUCT[locale].get('seoDescriptions', {})
+        if route in overrides:
+            assert page.description == overrides[route], (path, 'search summary override')
+        for image in page.images:
+            decorative = image.get('aria-hidden') == 'true' or image.get('class') == 'store-icon'
+            assert image['alt'].strip() or decorative, (path, 'empty alt must be decorative')
         for name in ('og:title', 'twitter:title'):
             assert page.metadata[name] == page.title, (path, name)
         for name in ('og:description', 'twitter:description'):
@@ -146,6 +153,7 @@ def main():
             assert alternate in parsed and parsed[alternate].alternates == page.alternates, (url, 'non-reciprocal hreflang')
     assert set(PRODUCT) == set(METADATA) == LOCALES
     assert len({PRODUCT[l]['summary'] for l in LOCALES}) == 8
+    assert len({p.description for p in parsed.values()}) == len(parsed), 'duplicate search descriptions'
     print('PASS: 64 pages, 8 locales, canonical/hreflang, sitemap dates, social metadata, stable App identity, visible FAQ/schema parity, local links/assets, anchors and downloads.')
 
 

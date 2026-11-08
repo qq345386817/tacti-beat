@@ -17,7 +17,7 @@ LANGUAGE_LABELS = {"en-US": "Choose language", "zh-Hans": "选择语言", "zh-Ha
 BREADCRUMB_LABELS = {'en-US': 'Breadcrumb', 'zh-Hans': '当前位置', 'zh-Hant': '目前位置', 'ja': '現在の位置', 'ko': '현재 위치', 'de-DE': 'Brotkrümelnavigation', 'fr-FR': 'Fil d’Ariane', 'es-ES': 'Ruta de navegación'}
 STORE = "https://apps.apple.com/app/id6769032242"
 VERSION = "20261107"
-UPDATED = "2026-11-06T18:27:39Z"
+UPDATED = "2026-11-08T15:25:00Z"
 ORIGIN = "https://tactibeat.luopeike.com"
 TOPIC_FAQS = {
     'haptic-music-app': ['demos', 'saved'],
@@ -110,7 +110,7 @@ def link(href, label, cls=""):
 
 
 def store_button(label):
-    return f'<a class="button primary app-store-button" href="{STORE}" rel="noopener"><img class="store-icon" src="../assets/app-store-icon.svg" alt="" width="22" height="22">{escape(label)}</a>'
+    return f'<a class="button primary app-store-button" href="{STORE}" rel="noopener"><img class="store-icon" src="../assets/app-store-icon.svg" alt="" aria-hidden="true" width="22" height="22">{escape(label)}</a>'
 
 
 class PageHead(HTMLParser):
@@ -166,7 +166,7 @@ def header(page, locale, route):
     fallback = "".join(link(f"../{key}/{route}", name) for key, name in LANGUAGES.items())
     return f'''<a class="skip-link" href="#main-content">{escape(COPY[locale]["skip"])}</a>
 <header class="site-header"><div class="container topbar">
-<a class="brand" href="./"><img src="../assets/apple-touch-icon.png" alt="" width="36" height="36"><span>TactiBeat</span></a>
+<a class="brand" href="./"><img src="../assets/apple-touch-icon.png" alt="" aria-hidden="true" width="36" height="36"><span>TactiBeat</span></a>
 <nav class="nav" aria-label="TactiBeat">{nav}</nav>
 <div class="language-picker topbar-language"><label class="sr-only" for="language-select">{escape(LANGUAGE_LABELS[locale])}</label>
 <select id="language-select" class="language-select" onchange="if (this.value) window.location.href = this.value;">{options}</select>
@@ -291,7 +291,7 @@ def home(page, locale):
 <section class="home-section compatibility"><div class="container reading"><h2>{escape(c['compatHeading'])}</h2><p>{escape(c['compatDevice'])}</p><p>{escape(compatibility)}</p><p class="medical-note">{escape(medical)}</p></div></section>
 {faq_section(locale, '', home_page=True)}
 <section class="home-section resources"><div class="container"><h2>{escape(c['resourcesHeading'])}</h2><div class="resource-links">{resources}</div></div></section>
-<section class="download-band"><div class="container"><img src="../assets/apple-touch-icon.png" alt="" width="64" height="64" loading="lazy"><h2>{escape(c['endHeading'])}</h2>{store_button(download)}</div></section>
+<section class="download-band"><div class="container"><img src="../assets/apple-touch-icon.png" alt="TactiBeat" width="64" height="64" loading="lazy"><h2>{escape(c['endHeading'])}</h2>{store_button(download)}</div></section>
 </main>{footer(page)}'''
 
 
@@ -314,6 +314,7 @@ def main():
             c = PRODUCT[locale]
             title = c['seoTitle'] if not route else c['helpTitle'] if route == 'help' else page.title
             description = c['summary'] if not route else c['helpLead'] if route == 'help' else c['supportLead'] if route == 'support' else c['routeLeads'].get(route, page.description)
+            description = c.get('seoDescriptions', {}).get(route, description)
             head = ''.join(PageHead(head, title, description, structured_data(page, locale, route, title, description)).parts)
             if path.name == "index.html":
                 body = home(page, locale)

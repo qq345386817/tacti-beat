@@ -1,6 +1,14 @@
 {
   "en-US": [
     {
+      "heading": "Compare two presets in one demo",
+      "items": [
+        "Start with Epic Pulse. Play Balanced Mix, choose Try Deep Bass, then press Play again. Both start at the beginning. The audio and other settings stay the same, and the audition does not change your defaults or saved results.",
+        "Haptics need a compatible iPhone. To check the device first, open Live Sound and tap Test Haptic without starting the microphone.",
+        "In Feel Check, Generated Pattern summarizes cues for the whole track, not vibrations measured on the phone. Audio at Playhead estimates the sound from the analyzed waveform while it plays. Those readings disappear when audio stops."
+      ]
+    },
+    {
       "heading": "Why do I feel separate pulses instead of constant vibration?",
       "items": [
         "TactiBeat is designed around rhythm-first pulses. Clear gaps make beats easier to read through touch.",
@@ -24,6 +32,14 @@
     }
   ],
   "zh-Hans": [
+    {
+      "heading": "用同一首演示试听两种预设",
+      "items": [
+        "从「史诗脉冲」开始。播放「均衡混合」，再点「试试深沉低频」，然后手动播放。两次都从片头开始，只改变映射预设，不影响默认设置或已保存的结果。",
+        "触觉输出需要兼容的 iPhone。想先检查设备，可以到「实时声音」点「测试触觉」，不用启动麦克风。",
+        "「触感检查」的「整段生成结果」概括全曲的震动片段，并非手机实测震动。「当前播放位置的声音」根据已分析的波形估算；停止播放后不再显示读数。"
+      ]
+    },
     {
       "heading": "为什么我感受到的是分离的脉冲，而不是持续震动？",
       "items": [
@@ -49,6 +65,14 @@
   ],
   "zh-Hant": [
     {
+      "heading": "用同一首示範試聽兩種預設",
+      "items": [
+        "從「史詩脈衝」開始。播放「均衡混合」，再點「試試深沉低頻」，然後手動播放。兩次都從開頭開始，只改變映射預設，不影響預設設定或已儲存的結果。",
+        "觸覺輸出需要相容的 iPhone。想先檢查裝置，可以到「即時聲音」點「測試觸覺」，不用啟動麥克風。",
+        "「觸感檢查」的「整段產生結果」概括全曲的震動片段，不是手機實測震動。「目前播放位置的聲音」根據已分析的波形估算；停止播放後不再顯示讀數。"
+      ]
+    },
+    {
       "heading": "為什麼我感受到的是分離的脈衝，而不是持續震動？",
       "items": [
         "TactiBeat 以節奏優先的脈衝為核心設計。清楚的間隔更容易透過觸覺讀出節拍。",
@@ -72,6 +96,14 @@
     }
   ],
   "ja": [
+    {
+      "heading": "同じデモで 2 つのプリセットを比べる",
+      "items": [
+        "「エピックパルス」を開き、「バランスミックス」で再生します。次に「ディープベースを試す」を押して、もう一度再生します。どちらも曲の頭から再生され、変わるのはマッピングのプリセットだけです。既定の設定や保存済みの結果は変わりません。",
+        "触覚出力には対応する iPhone が必要です。先に端末を確かめるには、「ライブサウンド」で「触覚をテスト」を押します。マイクを開始する必要はありません。",
+        "触感チェックの「生成された触覚パターン」は曲全体の触覚キューの概要で、端末の振動を測定した値ではありません。「再生位置の音声」は解析済みの波形から推定し、音声を停止すると表示されなくなります。"
+      ]
+    },
     {
       "heading": "なぜ連続振動ではなく、分離したパルスになるのですか？",
       "items": [
@@ -97,6 +129,14 @@
   ],
   "ko": [
     {
+      "heading": "같은 데모로 프리셋 두 가지 비교하기",
+      "items": [
+        "‘에픽 펄스’에서 ‘균형 믹스’를 재생한 다음 ‘깊은 베이스 체험하기’를 누르고 다시 재생하세요. 두 번 모두 처음부터 시작하며 매핑 프리셋만 달라집니다. 기본 설정과 저장한 결과는 그대로 유지됩니다.",
+        "햅틱 출력에는 호환 iPhone이 필요합니다. 먼저 기기를 확인하려면 ‘라이브 사운드’에서 ‘햅틱 테스트’를 누르세요. 마이크를 시작할 필요는 없습니다.",
+        "느낌 확인의 ‘생성된 햅틱 패턴’은 곡 전체의 햅틱 큐를 요약한 것으로, 기기 진동의 측정값은 아닙니다. ‘재생 위치의 소리’는 분석한 파형에서 추정되며, 소리를 멈추면 수치도 사라집니다."
+      ]
+    },
+    {
       "heading": "왜 지속 진동이 아니라 분리된 펄스로 느껴지나요?",
       "items": [
         "TactiBeat은 리듬 중심 펄스를 기준으로 설계되었습니다. 뚜렷한 간격이 있을수록 촉각으로 비트를 읽기 쉽습니다.",
@@ -120,6 +160,14 @@
     }
   ],
   "de-DE": [
+    {
+      "heading": "Zwei Voreinstellungen mit derselben Demo vergleichen",
+      "items": [
+        "Öffne „Epischer Puls“ und spiele die Demo mit „Ausgewogener Mix“ ab. Wähle dann „Ausprobieren: Tiefer Bass“ und starte die Wiedergabe erneut. Beide Durchgänge beginnen von vorn. Nur die Zuordnung ändert sich; Standardeinstellungen und gespeicherte Ergebnisse bleiben unverändert.",
+        "Für haptische Ausgabe ist ein kompatibles iPhone nötig. Um das Gerät vorher zu prüfen, tippe unter „Live-Sound“ auf „Haptik testen“. Das Mikrofon muss dafür nicht gestartet werden.",
+        "Im Gefühlscheck fasst „Erzeugtes Haptikmuster“ die erzeugten Impulse des ganzen Titels zusammen. Es misst keine Vibrationen am iPhone. „Ton an der Abspielposition“ beruht auf der analysierten Wellenform; beim Anhalten verschwinden die Werte."
+      ]
+    },
     {
       "heading": "Warum spüre ich getrennte Impulse statt einer dauerhaften Vibration?",
       "items": [
@@ -145,6 +193,14 @@
   ],
   "fr-FR": [
     {
+      "heading": "Comparer deux préréglages sur la même démo",
+      "items": [
+        "Ouvrez « Pulsation épique » et lancez « Mix équilibré ». Choisissez ensuite « Essayer Basses profondes », puis relancez la lecture. Les deux écoutes commencent au début. Seul le préréglage de correspondance change, sans modifier vos réglages par défaut ni vos résultats enregistrés.",
+        "Le retour haptique exige un iPhone compatible. Pour vérifier l’appareil, touchez « Tester l’haptique » dans « Son en direct », sans lancer le microphone.",
+        "Dans le contrôle de sensation, « Motif haptique généré » résume les impulsions de tout le morceau : ce ne sont pas des vibrations mesurées sur l’iPhone. « Audio à la position de lecture » est une estimation issue de la forme d’onde analysée. Les valeurs disparaissent à l’arrêt."
+      ]
+    },
+    {
       "heading": "Pourquoi est-ce que je ressens des impulsions séparées au lieu d’une vibration continue ?",
       "items": [
         "TactiBeat est conçu autour d’impulsions centrées sur le rythme. Des espaces nets rendent les battements plus lisibles par le toucher.",
@@ -168,6 +224,14 @@
     }
   ],
   "es-ES": [
+    {
+      "heading": "Comparar dos preajustes con la misma demo",
+      "items": [
+        "Abre «Pulso épico» y reproduce la demo con «Mezcla equilibrada». Después pulsa «Probar Graves profundos» y vuelve a reproducirla. Ambas escuchas empiezan desde el principio. Solo cambia el preajuste de mapeo, no los ajustes por defecto ni los resultados guardados.",
+        "La respuesta háptica requiere un iPhone compatible. Para comprobar el dispositivo, toca «Probar háptica» en «Sonido en vivo», sin activar el micrófono.",
+        "En la prueba de sensación, «Patrón háptico generado» resume las señales de toda la pista: no mide las vibraciones del iPhone. «Audio en el punto de reproducción» se estima a partir de la forma de onda analizada. Los valores se ocultan al detener el audio."
+      ]
+    },
     {
       "heading": "¿Por qué siento pulsos separados en lugar de una vibración continua?",
       "items": [

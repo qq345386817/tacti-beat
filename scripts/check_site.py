@@ -6,11 +6,11 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urljoin, urlsplit, unquote
 import xml.etree.ElementTree as ET
-from build_site import VERSION, UPDATED, PRODUCT, METADATA, questions
+from build_site import VERSION, UPDATED, PRODUCT, METADATA, LANGUAGES, ROUTES, HREFLANG, RTL, NEW_PAGES, alternates, questions
 
 ROOT = Path(__file__).resolve().parents[1]
 ORIGIN = "https://tactibeat.luopeike.com"
-LOCALES = {"en-US", "zh-Hans", "zh-Hant", "de-DE", "fr-FR", "es-ES", "ja", "ko"}
+LOCALES = set(LANGUAGES)
 
 
 class Page(HTMLParser):
@@ -18,13 +18,14 @@ class Page(HTMLParser):
         super().__init__()
         self.ids, self.targets, self.images, self.alternates, self.options = [], [], [], {}, []
         self.h1 = self.main = 0
-        self.canonical = self.lang = self.description = self.label = ""
+        self.canonical = self.lang = self.direction = self.description = self.label = ""
         self.structured_data = []
         self.script = False
         self.in_body = self.in_title = False
         self.title = ''
         self.text = []
         self.metadata = {}
+        self.has_refresh = False
         self.labels = {}
         self.active_label = None
         self.feed(source)
@@ -33,15 +34,17 @@ class Page(HTMLParser):
         a = dict(attrs)
         if tag == 'body': self.in_body = True
         if tag == 'title': self.in_title = True
-        if tag == 'meta': self.metadata[a.get('name') or a.get('property')] = a.get('content', '')
+        if tag == 'meta':
+            self.metadata[a.get('name') or a.get('property')] = a.get('content', '')
+            self.has_refresh |= a.get('http-equiv', '').lower() == 'refresh'
         if 'id' in a: self.ids.append(a['id'])
-        if tag == 'html': self.lang = a.get('lang', '')
+        if tag == 'html':
+            self.lang, self.direction = a.get('lang', ''), a.get('dir', '')
         if tag == 'h1': self.h1 += 1
         if tag == 'main': self.main += 1
         if tag == 'link' and a.get('rel') == 'canonical': self.canonical = a['href']
         if tag == 'link' and a.get('rel') == 'alternate': self.alternates[a['hreflang']] = a['href']
         if tag == 'meta' and a.get('name') == 'description': self.description = a.get('content', '')
-        if tag == 'meta' and a.get('name') == 'robots': assert 'noindex' not in a.get('content', '')
         if tag in ('a', 'link'): self.targets.append(a.get('href', ''))
         if tag in ('img', 'script') and 'src' in a: self.targets.append(a['src'])
         if tag == 'img':
@@ -78,8 +81,12 @@ def main():
     ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9', 'h': 'http://www.w3.org/1999/xhtml'}
     entries = ET.parse(ROOT / 'sitemap.xml').findall('s:url', ns)
     urls = [e.find('s:loc', ns).text for e in entries]
-    assert len(urls) == len(set(urls)) == 64
+    assert len(urls) == len(set(urls)) == len(LOCALES) * len(ROUTES)
     assert {urlsplit(u).path.split('/')[1] for u in urls} == LOCALES
+    not_found = Page((ROOT / '404.html').read_text())
+    assert not_found.h1 == not_found.main == 1 and 'noindex' in not_found.metadata.get('robots', '')
+    assert not not_found.has_refresh and not not_found.canonical, '404 must not impersonate the homepage'
+    assert set(not_found.targets) >= {f'/{locale}/' for locale in LOCALES}
     parsed = {}
     for url, entry in zip(urls, entries):
         path = file_for(url)
@@ -89,7 +96,9 @@ def main():
         route = '' if path.name == 'index.html' else path.stem
         assert page.h1 == page.main == 1, (path, 'one h1 and one main required')
         assert page.canonical == url, (path, page.canonical)
-        assert page.lang and page.description and page.structured_data, path
+        assert 'noindex' not in page.metadata.get('robots', '') and not page.has_refresh, path
+        assert page.lang == HREFLANG.get(locale, locale) and page.description and page.structured_data, path
+        assert (page.direction == 'rtl') == (locale in RTL), path
         assert 30 <= len(page.description) <= 260, (path, 'missing or unhelpfully short/long description')
         overrides = PRODUCT[locale].get('seoDescriptions', {})
         if route in overrides:
@@ -125,12 +134,17 @@ def main():
             visible = ' '.join(' '.join(page.text).split())
             assert all(name in visible for name in METADATA[locale]['presets']), (path, 'preset names differ from App')
             assert all(name in visible for name in METADATA[locale]['labels'].values()), (path, 'control names differ from App')
+        if locale in NEW_PAGES and route == 'support':
+            assert any(target.startswith('mailto:') for target in page.targets), (path, 'missing support contact')
+        if locale in NEW_PAGES and route == 'privacy-policy':
+            assert all(term in ' '.join(page.text) for term in ('HMAC', 'Cloudflare')), (path, 'missing analytics disclosure')
         assert f'../style/base.css?v={VERSION}' in page.targets, (path, 'stale stylesheet version')
         assert not [i for i, n in Counter(page.ids).items() if n > 1], path
         assert page.labels.get('language-select', '').strip(), (path, 'language label')
-        assert len(page.options) == 8 and sum('selected' in o for o in page.options) == 1, path
+        assert {o['value'] for o in page.options} == {f'../{l}/{route}' for l in LOCALES}, path
+        assert [o['value'] for o in page.options if 'selected' in o] == [f'../{locale}/{route}'], path
         assert page.alternates == {e.attrib['hreflang']: e.attrib['href'] for e in entry.findall('h:link', ns)}, path
-        assert len(page.alternates) == 9 and url in page.alternates.values(), path
+        assert page.alternates == alternates(route) and url in page.alternates.values(), path
         for target in page.targets:
             full = urljoin(url, target)
             parts = urlsplit(full)
@@ -142,6 +156,9 @@ def main():
                 assert parts.fragment in target_page.ids, (path, 'missing anchor', target)
         assert any(t == 'https://apps.apple.com/app/id6769032242' for t in page.targets), path
         if path.name == 'index.html':
+            if locale in NEW_PAGES:
+                assert all(any(img['src'] == f'../assets/screens/{locale}/{scene}.webp' for img in page.images)
+                           for scene in ('analysis', 'live', 'stream', 'tuning')), path
             assert 'HLS' in path.read_text(), path
             assert any(i.get('fetchpriority') == 'high' for i in page.images), path
             hero = [i for i in page.images if i.get('fetchpriority') == 'high']
@@ -152,9 +169,9 @@ def main():
         for alternate in page.alternates.values():
             assert alternate in parsed and parsed[alternate].alternates == page.alternates, (url, 'non-reciprocal hreflang')
     assert set(PRODUCT) == set(METADATA) == LOCALES
-    assert len({PRODUCT[l]['summary'] for l in LOCALES}) == 8
+    assert len({PRODUCT[l]['summary'] for l in LOCALES}) == len(LOCALES)
     assert len({p.description for p in parsed.values()}) == len(parsed), 'duplicate search descriptions'
-    print('PASS: 64 pages, 8 locales, canonical/hreflang, sitemap dates, social metadata, stable App identity, visible FAQ/schema parity, local links/assets, anchors and downloads.')
+    print(f'PASS: {len(urls)} pages, {len(LOCALES)} locales, canonical/hreflang, sitemap dates, social metadata, stable App identity, visible FAQ/schema parity, local links/assets, anchors and downloads.')
 
 
 if __name__ == '__main__':

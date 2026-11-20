@@ -1,6 +1,6 @@
 # TactiBeat Website
 
-Static, eight-locale website for TactiBeat. Production is served by the existing Cloudflare Pages project `tacti-beat`, connected to this repository's `main` branch.
+Static, eleven-locale website for TactiBeat. Production is served by the existing Cloudflare Pages project `tacti-beat`, connected to this repository's `main` branch.
 
 ## Editing
 
@@ -9,8 +9,14 @@ Static, eight-locale website for TactiBeat. Production is served by the existing
 - Retained rhythm, material-selection and tuning advice: `content/help-reference.json`.
 - Public App copy and exact localized preset names: `content/store-metadata.json`.
 - Shared layout generator: `scripts/build_site.py`.
+- Arabic, Hindi and Russian page titles, support and privacy copy: `content/localized-pages.json`. The Arabic site route is `/ar/`; its App Store metadata uses `ar-SA`.
+- New locale homepages use matching app screenshots under `assets/screens/<locale>/`, not a fallback image in another language.
 - Shared visual tokens, responsive layout and reference-page typography: `style/base.css`.
 - Topic examples, support contact and privacy-policy sections: the localized HTML files.
+
+After recapturing the iPhone screenshots for the new locales, run
+`python3 scripts/sync_localized_screens.py ar hi ru` before checking the site.
+The exporter uses ffmpeg and the native App captures, without the App Store frame.
 
 When App metadata changes, run `python3 scripts/sync_metadata.py` from this website
 checkout inside the App project. Only names, subtitles, descriptions, promotional
@@ -35,7 +41,7 @@ python3 scripts/check_site.py
 
 Update `UPDATED` in the generator only when publishing actual content changes; it
 is used consistently for page `dateModified` and sitemap `lastmod`. Do not stamp
-every build with the current time. The checks cover all 64 canonical pages and
+every build with the current time. The checks cover all 88 canonical pages and
 require FAQ schema answers to match the visible localized answers exactly.
 
 Search-only descriptions can be supplied in `content/product.json` via
@@ -69,11 +75,17 @@ The App palette comes from `HapticMusic/BrandPalette.swift` in the parent App pr
 
 `assets/illustrations/sound-to-touch-v1.webp` is a conceptual brand illustration generated with the built-in image-generation tool. It visualizes sound becoming tactile pulses, not measured audio or an actual App screen. It has a transparent background, no embedded text, and an explicitly localized concept-illustration caption in every locale. The prompt and provenance are recorded alongside the asset.
 
-`assets/screens/` contains losslessly encoded WebP versions of actual App screenshots from the parent project's October 19 UI validation. They are intentionally versioned product website assets, not test reports. They show the Simplified Chinese App interface; this is stated in every locale. File analysis comes from a real bundled Demo; Live/Stream activity uses demonstration data, also explicitly labeled. These screenshots remain below the conceptual hero so visitors can inspect the real interface. No generated UI or invented device frame is used.
+`assets/screens/` contains WebP captures of the real App interface. The shared captures show the Simplified Chinese UI; the Arabic, Hindi and Russian pages show captures from the corresponding App language. File analysis comes from a bundled demo; Live/Stream activity uses demonstration data, explicitly labeled. These are versioned website assets, not test reports. No generated UI or invented device frame is used.
 
 ## Publishing
 
-Commit and push `main` after checks pass. Confirm the matching Git commit reaches a successful **production** deployment in Cloudflare Pages, then check the custom domain, not only `pages.dev`. Keep all 64 canonical URLs and their reciprocal hreflang links. Update sitemap `lastmod` when page content changes; use the content change date, not an arbitrary fetch date.
+Keep the root `404.html` in the deployment. Without it, Cloudflare Pages serves
+the root HTML with HTTP 200 on missing asset paths; a missing localized support
+or privacy page could then appear to succeed while returning the English home.
+After deploying new language folders, verify each localized home, support and
+privacy URL by its canonical, HTML language and page content, not just its status.
+
+Commit and push `main` after checks pass. Confirm the matching Git commit reaches a successful **production** deployment in Cloudflare Pages, then check the custom domain, not only `pages.dev`. Keep all 88 canonical URLs and their reciprocal hreflang links. Update sitemap `lastmod` when page content changes; use the content change date, not an arbitrary fetch date.
 
 No API tokens, environment files, build caches, design-editor blobs or browser-test artifacts belong in this repository.
 
@@ -86,7 +98,7 @@ deployed at the site root; do not add it to the sitemap or robots disallow rules
 Cloudflare Pages publishes directly from the linked GitHub repository. No GitHub
 Actions deployment or notification workflow is required. After a content update,
 the manual IndexNow script waits for the production key and exact sitemap to match
-the checkout, then submits its 64 canonical URLs. It requires no account API token.
+the checkout, then submits the canonical URLs. It requires no account API token.
 Failed checks or submissions exit with an error instead of reporting success.
 
 For a local dry run, offline tests, or a manual post-deploy notification:

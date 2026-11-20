@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Refresh static page bodies while preserving canonical routes and reference content."""
 import json
+import re
 from html import escape
 from html.parser import HTMLParser
 from pathlib import Path
@@ -15,9 +16,15 @@ METADATA = json.loads((ROOT / "content/store-metadata.json").read_text())["local
 LANGUAGES = {"en-US": "English", "zh-Hans": "简体中文", "zh-Hant": "繁體中文", "ja": "日本語", "ko": "한국어", "de-DE": "Deutsch", "fr-FR": "Français", "es-ES": "Español"}
 LANGUAGE_LABELS = {"en-US": "Choose language", "zh-Hans": "选择语言", "zh-Hant": "選擇語言", "ja": "言語を選択", "ko": "언어 선택", "de-DE": "Sprache wählen", "fr-FR": "Choisir la langue", "es-ES": "Elegir idioma"}
 BREADCRUMB_LABELS = {'en-US': 'Breadcrumb', 'zh-Hans': '当前位置', 'zh-Hant': '目前位置', 'ja': '現在の位置', 'ko': '현재 위치', 'de-DE': 'Brotkrümelnavigation', 'fr-FR': 'Fil d’Ariane', 'es-ES': 'Ruta de navegación'}
+NEW_PAGES = json.loads((ROOT / 'content/localized-pages.json').read_text())
+LANGUAGES.update({'ar': 'العربية', 'hi': 'हिन्दी', 'ru': 'Русский'})
+LANGUAGE_LABELS.update({'ar': 'اختر اللغة', 'hi': 'भाषा चुनें', 'ru': 'Выбрать язык'})
+BREADCRUMB_LABELS.update({'ar': 'مسار التنقل', 'hi': 'नेविगेशन पथ', 'ru': 'Путь навигации'})
+HREFLANG = {'en-US': 'en', 'de-DE': 'de', 'fr-FR': 'fr', 'es-ES': 'es'}
+RTL = {'ar'}
 STORE = "https://apps.apple.com/app/id6769032242"
-VERSION = "20261107"
-UPDATED = "2026-11-08T15:25:00Z"
+VERSION = "20261120"
+UPDATED = "2026-11-20"
 ORIGIN = "https://tactibeat.luopeike.com"
 TOPIC_FAQS = {
     'haptic-music-app': ['demos', 'saved'],
@@ -25,6 +32,74 @@ TOPIC_FAQS = {
     'live-audio-haptics': ['sources', 'other-apps'],
     'tactile-audio-accessibility': ['device', 'limits'],
 }
+ROUTES = ('', 'help', 'support', 'privacy-policy', *TOPIC_FAQS)
+
+
+def alternates(route):
+    return {**{HREFLANG.get(l, l): f'{ORIGIN}/{l}/{route}' for l in LANGUAGES},
+            'x-default': f'{ORIGIN}/en-US/{route}'}
+
+
+def seed(locale, route):
+    """Assemble a new locale page from authored copy instead of cloning English."""
+    c = NEW_PAGES[locale]
+    title, description = c['titles'][route]
+    canonical = f'{ORIGIN}/{locale}/{route}'
+    direction = ' dir="rtl"' if locale in RTL else ''
+    links = ''.join(f'<link rel="alternate" hreflang="{lang}" href="{href}">\n'
+                    for lang, href in alternates(route).items())
+    socials = {'og:type': 'website', 'og:url': canonical, 'og:site_name': 'TactiBeat',
+               'og:locale': c['ogLocale'], 'og:title': title, 'og:description': description,
+               'og:image': ORIGIN + '/assets/icon-512.png'}
+    meta = ''.join(f'<meta property="{key}" content="{escape(value, quote=True)}">\n'
+                   for key, value in socials.items())
+    nav = ''.join(link(href, label) for href, label in zip(('./', 'help', 'support', 'privacy-policy'), c['nav']))
+    intro = (f'<section class="hero"><h1>{escape(title.removesuffix(" | TactiBeat"))}</h1>'
+             f'<p class="lead">{escape(c["effective"] if route == "privacy-policy" else description)}</p>'
+             f'<div class="actions">{store_button(c["download"])}</div></section>')
+    groups = c['sections'].get(route, [])
+    if route in TOPIC_FAQS or route == 'support':
+        sections = '<section class="section"><dl class="definition">' + ''.join(
+            f'<dt>{escape(heading)}</dt><dd>{safe_copy(body)}</dd>' for heading, body in groups) + '</dl></section>'
+    else:
+        sections = ''.join(f'<section class="section"><h2>{escape(heading)}</h2><p>{safe_copy(body)}</p></section>'
+                           for heading, body in groups)
+    notice = f'<p class="notice">{escape(c["notice"])}</p>'
+    if route == 'support':
+        notice = f'<section class="section">{notice}</section>'
+    return f'''<!DOCTYPE html>
+<html lang="{locale}"{direction}>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{escape(description, quote=True)}">
+<meta name="robots" content="index,follow">
+{meta}<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{escape(title, quote=True)}">
+<meta name="twitter:description" content="{escape(description, quote=True)}">
+<meta name="twitter:image" content="{ORIGIN}/assets/icon-512.png">
+<meta name="apple-itunes-app" content="app-id=6769032242, app-argument={STORE}">
+<meta name="theme-color" content="#6D4AFF">
+<script type="application/ld+json">{{}}</script>
+<link rel="canonical" href="{canonical}">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+{links}<link rel="stylesheet" href="../style/base.css?v={VERSION}">
+<title>{escape(title)}</title>
+</head>
+<body><nav class="nav">{nav}</nav>{intro}{sections}{notice}</body></html>'''
+
+
+def safe_copy(value):
+    email = 'cameoshell09@gmail.com'
+    return escape(value).replace(email, f'<a href="mailto:{email}" dir="ltr">{email}</a>')
+
+
+def screen_asset(locale, scene):
+    if locale in NEW_PAGES:
+        return f'../assets/screens/{locale}/{scene}.webp'
+    return f'../assets/screens/{scene}.webp'
 
 
 class Page(HTMLParser):
@@ -114,10 +189,12 @@ def store_button(label):
 
 
 class PageHead(HTMLParser):
-    def __init__(self, source, title, description, graph):
+    def __init__(self, source, title, description, graph, route):
         super().__init__(convert_charrefs=False)
         self.parts = []
         self.title, self.description, self.graph = title, description, graph
+        self.alternates = alternates(route)
+        self.seen_alternates = set()
         self.in_title = self.in_json = False
         self.feed(source)
 
@@ -130,6 +207,15 @@ class PageHead(HTMLParser):
         self.in_json = (tag == 'script' and a.get('type') == 'application/ld+json') or self.in_json
         if tag == 'title':
             self.parts.append('<title>' + escape(self.title))
+            return
+        if tag == 'link' and a.get('rel') == 'alternate' and a.get('hreflang'):
+            lang = a['hreflang']
+            languages = [lang]
+            if lang == 'x-default':
+                languages = [key for key in self.alternates if key not in self.seen_alternates]
+            self.parts.append('\n  '.join(f'<link rel="alternate" hreflang="{key}" href="{self.alternates[key]}">'
+                                           for key in languages if key in self.alternates))
+            self.seen_alternates.update(languages)
             return
         field = a.get('name') or a.get('property')
         if tag == 'meta' and field in ('description', 'og:description', 'twitter:description', 'og:title', 'twitter:title'):
@@ -227,7 +313,7 @@ def reference_content(page, locale, route):
     return (reference_intro(page, locale, page.title.removesuffix(' | TactiBeat'), c['routeLeads'][route])
             + page.sections[1] + presets_section(locale) + faq_section(locale, route)
             + f'<section class="section"><h2>{escape(COPY[locale]["resourcesHeading"])}</h2><div class="resource-links">'
-            + ''.join(link(other, Page((ROOT / locale / (other + '.html')).read_text()).title.removesuffix(' | TactiBeat')) for other in TOPIC_FAQS if other != route)
+            + ''.join(link(other, topic_title(locale, other)) for other in TOPIC_FAQS if other != route)
             + f'</div><p class="notice">{escape(notice)}</p></section>')
 
 
@@ -261,6 +347,12 @@ def breadcrumb(page, locale, title):
     return f'<nav class="breadcrumb" aria-label="{BREADCRUMB_LABELS[locale]}">{link("./", page.nav[0]["text"])}<span aria-hidden="true"> / </span><span aria-current="page">{escape(title)}</span></nav>'
 
 
+def topic_title(locale, route):
+    if locale in NEW_PAGES:
+        return NEW_PAGES[locale]['titles'][route][0].removesuffix(' | TactiBeat')
+    return Page((ROOT / locale / (route + '.html')).read_text()).title.removesuffix(' | TactiBeat')
+
+
 def home(page, locale):
     c = COPY[locale]
     download = next(a["text"] for a in page.links if a["href"] == STORE)
@@ -269,13 +361,13 @@ def home(page, locale):
     assets = ["analysis", "live", "stream"]
     presets = ''.join(f'<li>{escape(name)}</li>' for name in METADATA[locale]['presets'])
     modes = "".join(f'''<article class="mode"><div class="mode-title"><span class="mode-number">0{i + 1}</span><h3>{escape(title)}</h3></div>
-<p>{escape(description)}</p><a class="screen-link {assets[i]}" href="../assets/screens/{assets[i]}.webp" aria-label="{escape(c['imageLabel'])}: {escape(title)}"><img src="../assets/screens/{assets[i]}.webp" alt="{escape(title)}" width="1320" height="2868" loading="lazy" decoding="async"></a></article>''' for i, (title, description) in enumerate(c["modes"]))
+<p>{escape(description)}</p><a class="screen-link {assets[i]}" href="{screen_asset(locale, assets[i])}" aria-label="{escape(c['imageLabel'])}: {escape(title)}"><img src="{screen_asset(locale, assets[i])}" alt="{escape(title)}" width="1320" height="2868" loading="lazy" decoding="async"></a></article>''' for i, (title, description) in enumerate(c["modes"]))
     routes = ["haptic-music-app", "music-vibration-app", "live-audio-haptics", "tactile-audio-accessibility"]
     resources = ""
     for route in routes:
         label = next((a["text"] for a in page.links if a["href"] == route), None)
         if label is None:
-            label = Page((ROOT / locale / (route + ".html")).read_text()).h1
+            label = topic_title(locale, route)
         resources += link(route, label)
     return f'''{header(page, locale, '')}
 <main id="main-content">
@@ -287,7 +379,7 @@ def home(page, locale):
 <section class="home-section modes-section" id="modes"><div class="container"><div class="section-heading"><h2>{escape(c['modeHeading'])}</h2></div>
 <div class="mode-grid">{modes}</div><p class="screen-note">{escape(c['screenNote'])}</p></div></section>
 <section class="home-section tuning-section"><div class="container tuning-grid"><div><h2>{escape(c['tuneHeading'])}</h2><p class="lead">{escape(c['tuneBody'])}</p><ul class="preset-list">{presets}</ul>{link('help', c['tuneLink'], 'text-link')}</div>
-<a class="tuning-image" href="../assets/screens/tuning.webp" aria-label="{escape(c['imageLabel'])}"><img src="../assets/screens/tuning.webp" alt="{escape(c['tuneAlt'])}" width="1320" height="2868" loading="lazy" decoding="async"></a></div></section>
+<a class="tuning-image" href="{screen_asset(locale, 'tuning')}" aria-label="{escape(c['imageLabel'])}"><img src="{screen_asset(locale, 'tuning')}" alt="{escape(c['tuneAlt'])}" width="1320" height="2868" loading="lazy" decoding="async"></a></div></section>
 <section class="home-section compatibility"><div class="container reading"><h2>{escape(c['compatHeading'])}</h2><p>{escape(c['compatDevice'])}</p><p>{escape(compatibility)}</p><p class="medical-note">{escape(medical)}</p></div></section>
 {faq_section(locale, '', home_page=True)}
 <section class="home-section resources"><div class="container"><h2>{escape(c['resourcesHeading'])}</h2><div class="resource-links">{resources}</div></div></section>
@@ -296,12 +388,14 @@ def home(page, locale):
 
 
 def main():
+    assert set(COPY) == set(PRODUCT) == set(REFERENCE) == set(METADATA) == set(LANGUAGES)
     for locale in LANGUAGES:
-        files = sorted((ROOT / locale).glob("*.html"))
-        parsed = {p.name: Page(p.read_text()) for p in files}
-        for path in files:
-            source = path.read_text()
-            page = parsed[path.name]
+        folder = ROOT / locale
+        folder.mkdir(exist_ok=True)
+        for route in ROUTES:
+            path = folder / ((route or 'index') + '.html')
+            source = seed(locale, route) if locale in NEW_PAGES else path.read_text()
+            page = Page(source)
             assert len(page.nav) == 4, path
             head, marker, _ = source.partition("<body")
             assert marker and "</head>" in head, path
@@ -315,7 +409,8 @@ def main():
             title = c['seoTitle'] if not route else c['helpTitle'] if route == 'help' else page.title
             description = c['summary'] if not route else c['helpLead'] if route == 'help' else c['supportLead'] if route == 'support' else c['routeLeads'].get(route, page.description)
             description = c.get('seoDescriptions', {}).get(route, description)
-            head = ''.join(PageHead(head, title, description, structured_data(page, locale, route, title, description)).parts)
+            head = ''.join(PageHead(head, title, description, structured_data(page, locale, route, title, description), route).parts)
+            head = re.sub(r'(?m)^[ \t]+\n', '', head)
             if path.name == "index.html":
                 body = home(page, locale)
                 css = ' class="home-page"'
@@ -326,11 +421,17 @@ def main():
     ns, html_ns = 'http://www.sitemaps.org/schemas/sitemap/0.9', 'http://www.w3.org/1999/xhtml'
     ET.register_namespace('', ns)
     ET.register_namespace('xhtml', html_ns)
-    sitemap = ET.parse(ROOT / 'sitemap.xml')
-    for entry in sitemap.getroot().findall(f'{{{ns}}}url'):
-        entry.find(f'{{{ns}}}lastmod').text = UPDATED
-    sitemap.write(ROOT / 'sitemap.xml', encoding='UTF-8', xml_declaration=True)
-    print('Updated 64 localized pages and sitemap; canonical routes and privacy-policy sections preserved.')
+    sitemap = ET.Element(f'{{{ns}}}urlset')
+    for locale in LANGUAGES:
+        for route in ROUTES:
+            entry = ET.SubElement(sitemap, f'{{{ns}}}url')
+            ET.SubElement(entry, f'{{{ns}}}loc').text = f'{ORIGIN}/{locale}/{route}'
+            ET.SubElement(entry, f'{{{ns}}}lastmod').text = UPDATED
+            for lang, href in alternates(route).items():
+                ET.SubElement(entry, f'{{{html_ns}}}link', rel='alternate', hreflang=lang, href=href)
+    ET.indent(sitemap)
+    ET.ElementTree(sitemap).write(ROOT / 'sitemap.xml', encoding='UTF-8', xml_declaration=True)
+    print(f'Updated {len(LANGUAGES) * len(ROUTES)} localized pages and sitemap.')
 
 
 if __name__ == "__main__":

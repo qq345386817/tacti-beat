@@ -9,8 +9,10 @@ import submit_indexnow as indexnow
 class IndexNowTests(unittest.TestCase):
     def test_payload_contains_only_sitemap_canonicals(self):
         data = indexnow.payload()
-        self.assertEqual(len(data['urlList']), 64)
-        self.assertEqual(len(set(data['urlList'])), 64)
+        self.assertEqual(len(data['urlList']), 88)
+        self.assertEqual(len(set(data['urlList'])), 88)
+        for locale in ('ar', 'hi', 'ru'):
+            self.assertIn(f'{indexnow.ORIGIN}/{locale}/support', data['urlList'])
         self.assertTrue(all(u.startswith(indexnow.ORIGIN + '/') for u in data['urlList']))
         self.assertEqual(data['keyLocation'], indexnow.ORIGIN + '/' + indexnow.KEY_FILE.name)
 

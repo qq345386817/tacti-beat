@@ -151,7 +151,7 @@ h3 {
   display: flex;
   align-items: center;
   gap: 24px;
-  margin-left: auto;
+  margin-inline-start: auto;
   flex-wrap: wrap;
 }
 .nav a {
@@ -240,7 +240,11 @@ h3 {
 }
 .text-link::after {
   content: "\2192";
-  padding-left: 10px;
+  padding-inline-start: 10px;
+}
+
+[dir="rtl"] .text-link::after {
+  content: "\2190";
 }
 .eyebrow,
 .kicker {
@@ -264,7 +268,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  margin-left: auto;
+  margin-inline-start: auto;
 }
 .footer-inner nav a {
   display: inline-flex;
@@ -464,7 +468,7 @@ h3 {
   max-width: 72ch;
 }
 .document ul {
-  padding-left: 24px;
+  padding-inline-start: 24px;
 }
 .document li {
   margin-bottom: 10px;
@@ -548,7 +552,7 @@ h3 {
     gap: 12px;
   }
   .topbar-language {
-    margin-left: auto;
+    margin-inline-start: auto;
     flex-basis: 148px;
   }
   .home-hero h1 {
@@ -590,7 +594,7 @@ h3 {
     gap: 16px;
   }
   .footer-inner nav {
-    margin-left: 0;
+    margin-inline-start: 0;
   }
 }
 @media (max-width: 600px) {

@@ -7,7 +7,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 LOCALES = {'en-US': 'en', 'zh-Hans': 'zh-Hans', 'zh-Hant': 'zh-Hant',
-           'ja': 'ja', 'ko': 'ko', 'de-DE': 'de', 'fr-FR': 'fr', 'es-ES': 'es'}
+           'ja': 'ja', 'ko': 'ko', 'de-DE': 'de', 'fr-FR': 'fr', 'es-ES': 'es',
+           'ar': 'ar', 'hi': 'hi', 'ru': 'ru'}
+STORE_LOCALES = {'ar': 'ar-SA'}
 FIELDS = {'name': 30, 'subtitle': 30, 'description': 4000, 'promotional_text': 170}
 PRESETS = ['Balanced Mix', 'Deep Bass', 'Beat Focus', 'Crisp Detail', 'Texture Feel', 'Voice & Melody']
 LABELS = {'feelCheck': 'Feel Check', 'testHaptic': 'Test Haptic', 'pocketMode': 'Pocket Mode'}
@@ -23,7 +25,7 @@ def snapshot(app_root):
     for locale, language in LOCALES.items():
         values = {}
         for field, limit in FIELDS.items():
-            path = app_root / 'fastlane/metadata_ios' / locale / f'{field}.txt'
+            path = app_root / 'fastlane/metadata_ios' / STORE_LOCALES.get(locale, locale) / f'{field}.txt'
             value = path.read_text().strip()
             if not value or len(value) > limit:
                 raise ValueError(f'{locale}/{field}: {len(value)} characters, limit {limit}')
@@ -47,10 +49,10 @@ def main():
     if args.check:
         if not destination.exists() or destination.read_text() != content:
             raise SystemExit('Website metadata snapshot is stale; run scripts/sync_metadata.py')
-        print('PASS: 8 locale snapshots match App metadata and preset names')
+        print(f'PASS: {len(LOCALES)} locale snapshots match App metadata and preset names')
     else:
         destination.write_text(content)
-        print('Synced public copy and six preset names for 8 locales; no keywords, contacts or credentials exported')
+        print(f'Synced public copy and six preset names for {len(LOCALES)} locales; no keywords, contacts or credentials exported')
 
 
 if __name__ == '__main__':
